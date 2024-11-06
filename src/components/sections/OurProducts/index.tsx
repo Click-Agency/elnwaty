@@ -4,9 +4,12 @@ import SectionHeader from "../../shared/SectionHeader";
 import compeleteFilter from "../../../assets/imgs/complete-filter.png";
 import ProductCard from "./ProductCard";
 import { trim } from "../../../utils/functions/general";
+import useScrollInToView from "../../../hooks/useScrollInToView";
+import useActivation from "../../../hooks/useActivation";
 
 const OurProducts = () => {
   const { t } = useTranslation(["home", "common"]);
+  const { targetRef, isInView } = useScrollInToView();
 
   const products = [
     {
@@ -59,8 +62,12 @@ const OurProducts = () => {
     },
   ];
 
+  const { activationArr } = useActivation(products.length, 300, {
+    initializtion: isInView,
+  });
+
   return (
-    <SectionContainer>
+    <SectionContainer ref={targetRef}>
       <SectionHeader title={t("ourProducts.title")} />
 
       <div
@@ -75,7 +82,11 @@ const OurProducts = () => {
           mt-7`)}
       >
         {products.map((product, i) => (
-          <ProductCard key={i} {...product} />
+          <ProductCard
+            key={i}
+            {...product}
+            parentInToView={activationArr[i].active}
+          />
         ))}
       </div>
     </SectionContainer>

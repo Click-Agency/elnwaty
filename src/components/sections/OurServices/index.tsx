@@ -7,9 +7,12 @@ import service2 from "../../../assets/imgs/service-2.png";
 import service3 from "../../../assets/imgs/service-3.png";
 import service4 from "../../../assets/imgs/service-4.png";
 import SectionHeader from "../../shared/SectionHeader";
+import useActivation from "../../../hooks/useActivation";
+import useScrollInToView from "../../../hooks/useScrollInToView";
 
 const OurServices = () => {
   const { t } = useTranslation(["home", "common"]);
+  const { targetRef, isInView } = useScrollInToView();
 
   const servicesArr = [
     {
@@ -46,8 +49,13 @@ const OurServices = () => {
     },
   ];
 
+  const { activationArr } = useActivation(servicesArr.length, 300, {
+    initializtion: isInView,
+  });
+
   return (
     <SectionContainer
+      ref={targetRef}
       className="bg-water-pattern bg-cover py-28"
       wraperClassName="items-center text-center gap-2"
     >
@@ -57,7 +65,12 @@ const OurServices = () => {
         className={trim(`
           max-w-[50rem]
           text-white
-          text-responsive-2md`)}
+          text-responsive-2md
+          transition-[transform, opacity]
+          duration-500
+          ease-in-out
+          ${isInView ? "opacity-100" : "opacity-0"}
+          ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
       >
         {t("ourServices.description")}
       </h3>
@@ -74,7 +87,11 @@ const OurServices = () => {
           justify-center`)}
       >
         {servicesArr.map((service, i) => (
-          <ServiceCard key={i} {...service} />
+          <ServiceCard
+            key={i}
+            {...service}
+            parentInToView={activationArr[i].active}
+          />
         ))}
       </div>
     </SectionContainer>

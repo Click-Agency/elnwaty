@@ -1,19 +1,24 @@
 import { trim } from "../../../utils/functions/general";
 import doubleQuotation from "../../../assets/imgs/double-quotation.png";
+import useScrollInToView from "../../../hooks/useScrollInToView";
 
 const TestimonialCard = ({
   className = "",
   img,
   name,
   feedback,
+  parentInToView,
 }: {
   img: string;
   name: string;
   feedback: string;
   className?: string;
+  parentInToView: boolean;
 }) => {
+  const { targetRef, isInView } = useScrollInToView();
   return (
     <div
+      ref={targetRef}
       className={trim(`
         flex
         flex-col
@@ -27,6 +32,11 @@ const TestimonialCard = ({
         bg-white
         rounded-xl
         p-10
+        transition-[transform, opacity]
+        duration-500
+        ease-in-out
+        ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
+        ${isInView && parentInToView ? "translate-y-0" : "translate-y-5"}
         ${className}`)}
     >
       <img src={img} alt={name} className="w-24 h-24 rounded-full" />

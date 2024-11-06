@@ -1,3 +1,4 @@
+import useScrollInToView from "../../../hooks/useScrollInToView";
 import { trim } from "../../../utils/functions/general";
 import ButtonStyled from "../../shared/ButtonStyled";
 
@@ -6,6 +7,7 @@ const ProductCard = ({
   img,
   description,
   btn,
+  parentInToView,
 }: {
   className?: string;
   img: string;
@@ -14,9 +16,12 @@ const ProductCard = ({
     text: string;
     onClickHandler: () => void;
   };
+  parentInToView: boolean;
 }) => {
+  const { targetRef, isInView } = useScrollInToView();
   return (
     <div
+      ref={targetRef}
       className={trim(`
         flex
         flex-col
@@ -28,6 +33,10 @@ const ProductCard = ({
         shadow-lg
         rounded-xl
         max-w-[350px]
+        transition-opacity
+        duration-500
+        ease-in-out
+        ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
         ${className}`)}
     >
       <img src={img} alt="product" />

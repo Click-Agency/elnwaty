@@ -7,9 +7,12 @@ import testimonialsTwo from "../../../assets/imgs/testimonials-2.png";
 import testimonialsThree from "../../../assets/imgs/testimonials-3.png";
 import TestimonialCard from "./TestimonialCard";
 import { trim } from "../../../utils/functions/general";
+import useScrollInToView from "../../../hooks/useScrollInToView";
+import useActivation from "../../../hooks/useActivation";
 
 const Testimonials = () => {
   const { t } = useTranslation(["home"]);
+  const { targetRef, isInView } = useScrollInToView();
 
   const testimonialsArr = [
     {
@@ -29,10 +32,21 @@ const Testimonials = () => {
     },
   ];
 
+  const { activationArr } = useActivation(testimonialsArr.length, 300, {
+    initializtion: isInView,
+  });
+
   return (
-    <SectionContainer className="relative" wraperClassName="py-7">
+    <SectionContainer
+      ref={targetRef}
+      className="relative"
+      wraperClassName="py-7"
+    >
       <Background />
-      <SectionHeader className="underline underline-offset-[1rem]" title={t("testimonials.title")} />
+      <SectionHeader
+        className="underline underline-offset-[1rem]"
+        title={t("testimonials.title")}
+      />
 
       <div
         className={trim(`
@@ -44,7 +58,11 @@ const Testimonials = () => {
           mt-10`)}
       >
         {testimonialsArr.map((testimonial, i) => (
-          <TestimonialCard key={i} {...testimonial} />
+          <TestimonialCard
+            key={i}
+            {...testimonial}
+            parentInToView={activationArr[i].active}
+          />
         ))}
       </div>
     </SectionContainer>

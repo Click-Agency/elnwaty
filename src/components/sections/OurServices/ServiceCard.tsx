@@ -1,11 +1,13 @@
 import { useEffect, useRef } from "react";
 import { trim } from "../../../utils/functions/general";
 import ButtonStyled from "../../shared/ButtonStyled";
+import useScrollInToView from "../../../hooks/useScrollInToView";
 
 const ServiceCard = ({
   img,
   description,
   btn,
+  parentInToView,
 }: {
   img: string;
   description: string;
@@ -13,9 +15,13 @@ const ServiceCard = ({
     title: string;
     onClickHandler: () => void;
   };
+  parentInToView: boolean;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const childRef = useRef<HTMLDivElement>(null);
+  const { isInView } = useScrollInToView({
+    ref: ref,
+  });
 
   const maxWidthLg = 350;
   const minWidthLg = 250;
@@ -73,7 +79,11 @@ const ServiceCard = ({
       className={trim(`
         relative
         flex
-        group`)}
+        group
+        transition-opacity
+        duration-500
+        ease-in-out
+        ${isInView && parentInToView ? "opacity-100" : "opacity-0"}`)}
     >
       <div
         ref={childRef}
