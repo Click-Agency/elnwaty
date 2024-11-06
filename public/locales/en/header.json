@@ -1,0 +1,13 @@
+{
+  "title": "header",
+
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "impact": "Our Impact",
+    "solutions": "Solutions",
+    "partners": "Partners",
+    "contact": "Contact Us",
+    "lang": "العربية"
+  }
+}

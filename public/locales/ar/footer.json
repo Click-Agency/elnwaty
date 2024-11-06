@@ -1,0 +1,34 @@
+{
+  "title": "التوقيع",
+
+  "signature": "هذه هي صفحة شهادات بسيطة تم تصميمها كجزء من تحديات dailyui. لقد قمت بإنشاء هذه التمريرة المتحركة لبطاقة لعرض الشهادة",
+
+  "columns": {
+    "about": {
+      "title": "حول",
+      "items": {
+        "about": "حول",
+        "services": "خدمات",
+        "portfolio": "محفظة"
+      }
+    },
+
+    "contact": {
+      "title": "اتصل",
+      "items": {
+        "about": "حول",
+        "services": "خدمات",
+        "portfolio": "محفظة"
+      }
+    },
+
+    "social": {
+      "title": "اجتماعي",
+      "items": {
+        "about": "حول",
+        "services": "خدمات",
+        "portfolio": "محفظة"
+      }
+    }
+  }
+}
