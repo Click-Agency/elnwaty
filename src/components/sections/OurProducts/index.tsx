@@ -15,50 +15,26 @@ const OurProducts = () => {
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionOne"),
-      btn: {
-        text: t("shopNow", { ns: "common" }),
-        onClickHandler: () => {},
-      },
     },
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionTwo"),
-      btn: {
-        text: t("shopNow", { ns: "common" }),
-        onClickHandler: () => {},
-      },
     },
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionThree"),
-      btn: {
-        text: t("shopNow", { ns: "common" }),
-        onClickHandler: () => {},
-      },
     },
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionFour"),
-      btn: {
-        text: t("shopNow", { ns: "common" }),
-        onClickHandler: () => {},
-      },
     },
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionFive"),
-      btn: {
-        text: t("shopNow", { ns: "common" }),
-        onClickHandler: () => {},
-      },
     },
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionSix"),
-      btn: {
-        text: t("shopNow", { ns: "common" }),
-        onClickHandler: () => {},
-      },
     },
   ];
 

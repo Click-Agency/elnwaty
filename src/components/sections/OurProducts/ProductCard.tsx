@@ -1,21 +1,16 @@
 import useScrollInToView from "../../../hooks/useScrollInToView";
 import { trim } from "../../../utils/functions/general";
-import ButtonStyled from "../../shared/ButtonStyled";
 
 const ProductCard = ({
   className = "",
   img,
   description,
-  btn,
+
   parentInToView,
 }: {
   className?: string;
   img: string;
   description: string;
-  btn: {
-    text: string;
-    onClickHandler: () => void;
-  };
   parentInToView: boolean;
 }) => {
   const { targetRef, isInView } = useScrollInToView();
@@ -50,15 +45,6 @@ const ProductCard = ({
       >
         {description}
       </p>
-
-      <ButtonStyled
-        ripple
-        className="mt-auto"
-        bg
-        hover
-        title={btn.text}
-        onClick={btn.onClickHandler}
-      />
     </div>
   );
 };

@@ -5,7 +5,7 @@ import { MdMenuOpen } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 import { trim } from "../../utils/functions/general";
 import Drawer from "./Drawer";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import DrawerContext from "../../context/drawer.context";
 import Logo from "../shared/Logo";
@@ -15,6 +15,7 @@ const Nav = () => {
   const { t, i18n } = useTranslation("header");
   const { pathname } = useLocation();
   const { setOpenDrawer } = useContext(DrawerContext);
+  const push = useNavigate();
 
   const navArr = [
     { name: t("nav.home"), link: appRoutes.home },
@@ -26,6 +27,11 @@ const Nav = () => {
   ];
 
   const { activationArr } = useActivation(navArr.length, 300);
+
+  const onClickHandler = (link: string) => {
+    if (pathname !== link) push(link);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <nav
@@ -45,6 +51,7 @@ const Nav = () => {
       {navArr.slice(0, 3).map(({ name, link }, i) => (
         <ButtonStyled
           key={i}
+          onClick={() => onClickHandler(link)}
           className={trim(`
             !text-primary
             hidden
@@ -63,11 +70,15 @@ const Nav = () => {
         />
       ))}
 
-      <Logo />
+      <Logo
+        onClick={() => onClickHandler(appRoutes.home)}
+        className="cursor-pointer"
+      />
 
       {navArr.slice(3).map(({ name, link }, i) => (
         <ButtonStyled
           key={i}
+          onClick={() => onClickHandler(link)}
           className={trim(`
             !text-primary
             hidden

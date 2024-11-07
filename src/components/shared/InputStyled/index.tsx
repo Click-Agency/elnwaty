@@ -20,7 +20,6 @@ const InputStyled = forwardRef(
       labelClassName = "",
       id,
       label,
-
       border,
       error,
       tagSize = "md",
@@ -40,7 +39,6 @@ const InputStyled = forwardRef(
       border?: boolean;
       transparent?: boolean;
       labelClassName?: string;
-
       error?: string;
       tagSize?: "xs" | "sm" | "md" | "lg" | "xl" | "custom";
       elemType?: "input" | "textarea";

@@ -160,7 +160,7 @@ const Form = () => {
         type="submit"
         bg
         hover
-        className="self-start"
+        className="md:self-start"
         ripple
         title={t("submit", { ns: "common" })}
         disabled={isLoading}

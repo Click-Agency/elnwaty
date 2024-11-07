@@ -42,11 +42,13 @@ export default {
         "hero-pattern": "url('assets/imgs/bg-hero.png')",
         "wave-pattern": "url('assets/imgs/bg-wave.png')",
         "water-pattern": "url('assets/imgs/bg-water-2x.png')",
+        "cyan-pattern": "url('assets/imgs/bg-gradient-cyan.png')",
+        "move-slim-pattern": "url('assets/imgs/bg-moving-water-slim.png')",
         "gradient-b-light":
           "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%)",
         "moving-wave-pattern": "url('assets/imgs/bg-moving-wave.png')",
         "gradient-cyan": "linear-gradient(90deg, #e2f5fe 0%, #cae4ef 100%)",
-        "cyan-pattern": "url('assets/imgs/bg-gradient-cyan.png')",
+        "mug-pattern": "url('assets/imgs/bg-mug.png')",
       },
       boxShadow: {
         "custom-glow":

@@ -11,10 +11,11 @@ const ContactUs = () => {
   const { targetRef, isInView } = useScrollInToView();
 
   return (
-    <SectionContainer ref={targetRef} wraperClassName="items-center">
+    <SectionContainer wraperClassName="items-center">
       <SectionHeader title={t("contactUs.title")} />
 
       <div
+        ref={targetRef}
         className={trim(`
           flex 
           flex-col 

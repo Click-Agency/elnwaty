@@ -40,7 +40,9 @@ const Footer = () => {
         bg-wave-pattern
         items-end
         bg-cover
-        py-10
+        pt-28
+        md:pt-20
+        pb-10
         min-h-[35rem]`)}
     >
       <div
@@ -55,6 +57,7 @@ const Footer = () => {
           2xl:w-[70%]
           xl:w-[90%]
           lg:container
+          gap-10
           containerPadding`)}
       >
         <div className="flex flex-col items-center gap-5 flex-1">
@@ -69,7 +72,8 @@ const Footer = () => {
               flex 
               flex-col 
               font-medium 
-              gap-5
+              gap-3
+              md:gap-5
               items-center
               flex-1`)}
           >
