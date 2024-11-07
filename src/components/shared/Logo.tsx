@@ -11,7 +11,6 @@ const Logo = ({
       src={logo}
       alt="logo"
       className={trim(`
-        w-52
         animate-appear
         ${className}`)}
       {...attributes}

@@ -28,7 +28,15 @@
   },
 
   "whyChooseUs": {
-    "title": "Why Choose Us?"
+    "title": "Why Choose Us?",
+
+    "items": {
+      "descriptionOne": "Over two decades of experience in water treatment",
+
+      "descriptionTwo": "Innovative and sustainable solutions tailored to your needs",
+
+      "descriptionThree": "Specialized team offering top-notch services and technical support"
+    }
   },
 
   "ourProducts": {

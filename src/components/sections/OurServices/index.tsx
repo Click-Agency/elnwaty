@@ -9,10 +9,12 @@ import service4 from "../../../assets/imgs/service-4.png";
 import SectionHeader from "../../shared/SectionHeader";
 import useActivation from "../../../hooks/useActivation";
 import useScrollInToView from "../../../hooks/useScrollInToView";
+import useContactNav from "../../../hooks/useContactNav";
 
 const OurServices = () => {
   const { t } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
+  const goToContact = useContactNav();
 
   const servicesArr = [
     {
@@ -20,7 +22,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionOne"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: () => console.log("Learn more"),
+        onClickHandler: goToContact,
       },
     },
     {
@@ -28,7 +30,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionTwo"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: () => console.log("Learn more"),
+        onClickHandler: goToContact,
       },
     },
     {
@@ -36,7 +38,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionThree"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: () => console.log("Learn more"),
+        onClickHandler: goToContact,
       },
     },
     {
@@ -44,7 +46,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionFour"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: () => console.log("Learn more"),
+        onClickHandler: goToContact,
       },
     },
   ];

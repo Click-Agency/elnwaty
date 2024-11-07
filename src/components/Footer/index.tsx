@@ -61,7 +61,7 @@ const Footer = () => {
           containerPadding`)}
       >
         <div className="flex flex-col items-center gap-5 flex-1">
-          <Logo className="w-72" />
+          <Logo className="w-60 md:w-72" />
           <p className="text-gray-200">{t("signature")}</p>
           <div></div>
         </div>

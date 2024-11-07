@@ -39,16 +39,33 @@ export default {
       },
       backgroundImage: {
         "gradient-90deg": "linear-gradient(90deg, #68BB3D, #50A133)",
+
         "hero-pattern": "url('assets/imgs/bg-hero.png')",
+
         "wave-pattern": "url('assets/imgs/bg-wave.png')",
+
         "water-pattern": "url('assets/imgs/bg-water-2x.png')",
+
         "cyan-pattern": "url('assets/imgs/bg-gradient-cyan.png')",
+
         "move-slim-pattern": "url('assets/imgs/bg-moving-water-slim.png')",
-        "gradient-b-light":
-          "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%)",
+
         "moving-wave-pattern": "url('assets/imgs/bg-moving-wave.png')",
+
         "gradient-cyan": "linear-gradient(90deg, #e2f5fe 0%, #cae4ef 100%)",
+
         "mug-pattern": "url('assets/imgs/bg-mug.png')",
+
+        "cup-water-pattern": "url('assets/imgs/bg-cup-water.png')",
+
+        "tanks-pattern": "url('assets/imgs/bg-tanks-factory.png')",
+        "drops-pattern": "url('assets/imgs/bg-drops.png')",
+
+        "mask-chemical-pattern": "url('assets/imgs/masked-chemical.png')",
+
+        "mask-factory-pattern": "url('assets/imgs/masked-factory.png')",
+
+        "mask-maintenance-pattern": "url('assets/imgs/masker-maintenance.png')",
       },
       boxShadow: {
         "custom-glow":

@@ -7,7 +7,7 @@ import { trim } from "../../../utils/functions/general";
 import useScrollInToView from "../../../hooks/useScrollInToView";
 import useActivation from "../../../hooks/useActivation";
 
-const OurProducts = () => {
+const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
   const { t } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
 
@@ -44,7 +44,7 @@ const OurProducts = () => {
 
   return (
     <SectionContainer ref={targetRef}>
-      <SectionHeader title={t("ourProducts.title")} />
+      {showTitle && <SectionHeader title={t("ourProducts.title")} />}
 
       <div
         className={trim(`

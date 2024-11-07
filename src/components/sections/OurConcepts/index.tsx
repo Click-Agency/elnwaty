@@ -2,8 +2,8 @@ import { useTranslation } from "react-i18next";
 import SectionContainer from "../../shared/containers/SectionContainer";
 import kidDrinking from "../../../assets/imgs/kid-drinking.png";
 import testChemicals from "../../../assets/imgs/test-chemicals.png";
-import emptyImg from "../../../assets/imgs/empty-img.png";
-import ConceptCard from "./conceptCard";
+import factoryFilters from "../../../assets/imgs/factory-filters.png";
+import ConceptCard from "./ConceptCard";
 import useActivation from "../../../hooks/useActivation";
 import useScrollInToView from "../../../hooks/useScrollInToView";
 
@@ -20,7 +20,7 @@ const OurConcepts = () => {
     {
       title: t("ourConcepts.vision.title"),
       description: t("ourConcepts.vision.description"),
-      img: emptyImg,
+      img: factoryFilters,
     },
     {
       title: t("ourConcepts.goals.title"),

@@ -3,32 +3,32 @@ import SectionContainer from "../shared/containers/SectionContainer";
 import { trim } from "../../utils/functions/general";
 import ButtonStyled from "../shared/ButtonStyled";
 import useScrollInToView from "../../hooks/useScrollInToView";
+import useContactNav from "../../hooks/useContactNav";
 
 const HomeHero = () => {
   const { t, i18n } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
+  const goToContact = useContactNav();
 
   return (
     <SectionContainer
       ref={targetRef}
-      className={trim(`
+      className={`
         bg-hero-pattern 
         md:bg-cover 
         bg-no-repeat
         md:bg-top 
         bg-center
         h-screen
-        justify-center`)}
-      wraperClassName={`${
-        i18n.language === "en" ? "md:items-end" : "md:items-start"
-      }`}
+        justify-center`}
+      wraperClassName={`${i18n.language === "en" ? "md:items-end" : ""}`}
     >
       <div
         className={trim(`
           flex 
           flex-col 
-          md:items-stretch i
-          tems-center 
+          md:items-stretch
+          items-center 
           md:gap-4 
           text-center 
           md:text-justify`)}
@@ -90,6 +90,7 @@ const HomeHero = () => {
             ${isInView ? "opacity-100" : "opacity-0"}`)}
           size="custom"
           title={t("contactUs", { ns: "common" })}
+          onClick={goToContact}
         />
       </div>
     </SectionContainer>

@@ -20,7 +20,7 @@ const Nav = () => {
   const navArr = [
     { name: t("nav.home"), link: appRoutes.home },
     { name: t("nav.about"), link: appRoutes.about },
-    { name: t("nav.impact"), link: appRoutes.impact },
+    { name: t("nav.products"), link: appRoutes.products },
     { name: t("nav.solutions"), link: appRoutes.solutions },
     { name: t("nav.partners"), link: appRoutes.partners },
     { name: t("nav.contact"), link: appRoutes.contact },
@@ -72,7 +72,7 @@ const Nav = () => {
 
       <Logo
         onClick={() => onClickHandler(appRoutes.home)}
-        className="cursor-pointer"
+        className="cursor-pointer w-40 md:w-52"
       />
 
       {navArr.slice(3).map(({ name, link }, i) => (
@@ -116,10 +116,11 @@ const Nav = () => {
         className={`${i18n.language === "ar" ? "-scale-x-100" : ""} md:hidden`}
         size="custom"
         onClick={() => setOpenDrawer((prev) => !prev)}
-        SvgIcon={<MdMenuOpen className="" color="#334d9d" size={30} />}
+        SvgIcon={<MdMenuOpen color="#334d9d" size={30} />}
       />
 
       <Drawer
+        drawerNavFun={onClickHandler}
         activePath={pathname}
         lang={i18n.language}
         navArr={navArr}

@@ -4,10 +4,12 @@ import SectionContainer from "../shared/containers/SectionContainer";
 import tankImg from "../../assets/imgs/tank.png";
 import { useTranslation } from "react-i18next";
 import useScrollInToView from "../../hooks/useScrollInToView";
+import useContactNav from "../../hooks/useContactNav";
 
 export const AboutDetails = () => {
   const { t } = useTranslation(["about", "common"]);
   const { targetRef, isInView } = useScrollInToView();
+  const goToContact = useContactNav();
 
   return (
     <SectionContainer
@@ -39,8 +41,10 @@ export const AboutDetails = () => {
           className="md:self-start"
           hover
           bg
+          ripple
           size="lg"
           title={t(`contactUs`, { ns: "common" })}
+          onClick={goToContact}
         />
       </div>
 

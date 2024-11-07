@@ -10,16 +10,16 @@ const useContactNav = () => {
   const push = useNavigate();
 
   useEffect(() => {
-    const contactElement = document.getElementById("contact");
+    const contactElement = document.getElementById("contactUs");
     setContactElement(() => contactElement);
   }, []);
 
   const goToContact = () => {
+    if (!contactElement) push(appRoutes.home);
+
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: "smooth" });
     }
-
-    push(appRoutes.home);
   };
 
   return goToContact;

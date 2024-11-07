@@ -22,11 +22,13 @@ const Drawer = ({
   activePath,
   ChangeLanguageBtn,
   lang,
+  drawerNavFun,
 }: {
   navArr: { name: string; link: string }[];
   activePath?: string | null;
   ChangeLanguageBtn?: JSX.Element;
   lang: string;
+  drawerNavFun: (link: string) => void;
 }) => {
   const { openDrawer, setOpenDrawer } = useContext(DrawerContext);
 
@@ -36,6 +38,11 @@ const Drawer = ({
   const handleClose = useCallback(() => {
     setShowComponent(setOpenDrawer, { value: false, delay: 300 });
   }, [setOpenDrawer, setShowComponent]);
+
+  const onNavHandler = (link: string) => {
+    handleClose();
+    drawerNavFun(link);
+  };
 
   const { aside, backDrop } = tailWindClasses;
 
@@ -105,7 +112,7 @@ const Drawer = ({
           {navArr.map(({ name, link }, i) => (
             <li key={i}>
               <ButtonStyled
-                onClick={handleClose}
+                onClick={() => onNavHandler(link)}
                 className={trim(`
                   !text-primary
                   font-medium

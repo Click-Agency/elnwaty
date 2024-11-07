@@ -4,10 +4,12 @@ import filterChangeImg from "../../assets/imgs/filter-change.png";
 import { trim } from "../../utils/functions/general";
 import ButtonStyled from "../shared/ButtonStyled";
 import useScrollInToView from "../../hooks/useScrollInToView";
+import useContactNav from "../../hooks/useContactNav";
 
 const WelcomeBanner = () => {
   const { t } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
+  const goToContact = useContactNav();
 
   return (
     <SectionContainer
@@ -89,6 +91,7 @@ const WelcomeBanner = () => {
           hover
           title={t("contactUs", { ns: "common" })}
           bg
+          onClick={goToContact}
         />
       </div>
     </SectionContainer>
