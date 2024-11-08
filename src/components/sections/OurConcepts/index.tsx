@@ -41,7 +41,8 @@ const OurConcepts = () => {
     <SectionContainer ref={targetRef} wraperClassName="gap-6 md:gap-0">
       {conceptsArr.map((concept, i) => (
         <ConceptCard
-          className={`${i % 2 !== 0 ? "md:!flex-row-reverse" : ""}`}
+          className={`
+            ${i % 2 !== 0 ? "md:!flex-row-reverse" : ""}`}
           key={i}
           parentIntoView={activationArr[i].active}
           {...concept}

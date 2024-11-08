@@ -38,6 +38,7 @@ const WhyChooseUs = () => {
         loop
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         spaceBetween={50}
+        dir="ltr"
         className={t(`
           w-full 
           rounded-2xl 
