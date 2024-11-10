@@ -1,17 +1,17 @@
 import { useTranslation } from "react-i18next";
-import SectionContainer from "../../shared/containers/SectionContainer";
-import SectionHeader from "../../shared/SectionHeader";
-import compeleteFilter from "../../../assets/imgs/complete-filter.png";
-import ProductCard from "./ProductCard";
-import { trim } from "../../../utils/functions/general";
-import useScrollInToView from "../../../hooks/useScrollInToView";
-import useActivation from "../../../hooks/useActivation";
+import SectionContainer from "../shared/containers/SectionContainer";
+import SectionHeader from "../shared/SectionHeader";
+import compeleteFilter from "../../assets/imgs/complete-filter.png";
+import ItemCard from "../shared/ItemCard";
+import { trim } from "../../utils/functions/general";
+import useScrollInToView from "../../hooks/useScrollInToView";
+import useActivation from "../../hooks/useActivation";
 
 const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
   const { t } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
 
-  const products = [
+  const productsArr = [
     {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionOne"),
@@ -38,7 +38,7 @@ const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
     },
   ];
 
-  const { activationArr } = useActivation(products.length, 300, {
+  const { activationArr } = useActivation(productsArr.length, 300, {
     initializtion: isInView,
   });
 
@@ -57,8 +57,8 @@ const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
           justify-items-center
           mt-7`)}
       >
-        {products.map((product, i) => (
-          <ProductCard
+        {productsArr.map((product, i) => (
+          <ItemCard
             key={i}
             {...product}
             parentInToView={activationArr[i].active}

@@ -2,7 +2,7 @@ const appRoutes = {
   home: "/",
   about: "/about-us",
   products: "/our-products",
-  solutions: "/solutions",
+  blogs: "/blogs",
   partners: "/partners",
   contact: "/contact",
 };

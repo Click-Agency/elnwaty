@@ -22,7 +22,7 @@ const Banner = ({
   return (
     <SectionContainer
       className={`
-        min-h-[250px]
+        min-h-[200px]
         bg-cover
         bg-no-repeat
         bg-center

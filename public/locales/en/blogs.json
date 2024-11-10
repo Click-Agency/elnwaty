@@ -1,0 +1,41 @@
+{
+  "title": "Welcome to Our Blogs",
+  "description": "Here you can find all the latest news and updates about our company.",
+
+  "ourSystems": {
+    "title": "Our Systems",
+
+    "items": {
+      "titleOne": "Ro / Membrane system",
+      "titleTwo": "Water filter & softeners",
+      "titleThree": "Containerized system",
+      "titleFour": "Cip system & UV sterilizer"
+    }
+  },
+
+  "whyOurTreatment": {
+    "title": "Why Choose Dar Al-Nawat Water Treatment Equipment Company",
+
+    "items": {
+      "itemOne": {
+        "title": "Experience and Leadership",
+        "description": "We have been in the water treatment industry for over 10 years and have a team of experts who are always ready to help you."
+      },
+
+      "itemTwo": {
+        "title": "Advanced Technology",
+        "description": "We use the latest technology in our systems to ensure that you get the best quality water."
+      },
+      
+      "itemThree": {
+        "title": "Comperhenive Solutions",
+        "description": "We offer a wide range of water treatment solutions to meet your needs."
+      },
+
+      "itemFour": {
+        "title": "Sustainability and Social Responsibility",
+        "description": "We are committed to sustainability and social responsibility and strive to make a positive impact on the environment and society."
+      }
+    }
+  }
+}
