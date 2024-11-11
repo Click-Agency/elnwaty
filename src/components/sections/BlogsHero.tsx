@@ -89,6 +89,7 @@ const BlogsHero = () => {
             key={i}
             {...blog}
             className="lg:flex-row flex-col"
+            imgClassName="max-w-[350px] md:max-w-[250px]"
             parentInToView={activationArr[i].active}
           />
         ))}
