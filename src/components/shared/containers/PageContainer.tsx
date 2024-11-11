@@ -4,9 +4,11 @@ import { HTMLAttributes, ReactNode, useEffect, useState } from "react";
 const PageContainer = ({
   children,
   className = "",
+  paddingTop,
   ...attributes
 }: Readonly<{
   children: ReactNode;
+  paddingTop?: boolean;
   className?: string;
 }> &
   HTMLAttributes<HTMLElement>) => {
@@ -66,10 +68,12 @@ const PageContainer = ({
         paddingBottom:
           (heights.footerfloat && heights.footerHeight) || undefined,
 
-        // paddingTop: (heights.headerfloat && heights.headerHeight) || undefined,
+        paddingTop:
+          (paddingTop && heights.headerfloat && heights.headerHeight) ||
+          undefined,
 
         minHeight: `calc(100vh - ${
-          heights.headerHeight 
+          heights.headerHeight
           // + heights.footerHeight
         }px)`,
       }}

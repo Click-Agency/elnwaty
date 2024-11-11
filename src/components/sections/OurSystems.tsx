@@ -11,7 +11,7 @@ import containerSystem from "../../assets/imgs/container-system.png";
 import uvSystem from "../../assets/imgs/uv-system.png";
 
 const OurSystems = ({ showTitle }: { showTitle?: boolean }) => {
-  const { t } = useTranslation(["blogs"]);
+  const { t } = useTranslation(["systems"]);
   const { targetRef, isInView } = useScrollInToView();
 
   const systemsArr = [

@@ -22,14 +22,14 @@ const Nav = () => {
     { name: t("nav.about"), link: appRoutes.about },
     { name: t("nav.products"), link: appRoutes.products },
     { name: t("nav.blogs"), link: appRoutes.blogs },
-    { name: t("nav.partners"), link: appRoutes.partners },
+    { name: t("nav.systems"), link: appRoutes.systems },
     { name: t("nav.contact"), link: appRoutes.contact },
   ];
 
   const { activationArr } = useActivation(navArr.length, 300);
 
   const onClickHandler = (link: string) => {
-    if (pathname !== link) push(link,);
+    if (pathname !== link) push(link);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 

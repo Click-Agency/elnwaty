@@ -7,5 +7,10 @@
   "submit": "Submit",
   "purify": "We purify your life",
   "notFound": "Page Not Found",
-  "goHome": "Go Home"
+  "goHome": "Go Home",
+
+  "hero": {
+    "title": "We Purify Water",
+    "subtitle": "Pure Water, Healthy Life"
+  }
 }

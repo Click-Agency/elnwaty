@@ -40,8 +40,8 @@ export default {
       backgroundImage: {
         "gradient-90deg": "linear-gradient(90deg, #68BB3D, #50A133)",
 
-        "gradient-t-light":
-          "linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(225,225,225,1) 100%)",
+        "gradient-t-dark":
+          "linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.0) 100%)",
 
         "hero-pattern": "url('assets/imgs/bg-hero.png')",
 
@@ -73,6 +73,8 @@ export default {
         "factory-pattern": "url('assets/imgs/bg-factroy.png')",
 
         "mask-cyan-pattern": "url('assets/imgs/bg-mask-cyan.png')",
+
+        "full-cup-pattern": "url('assets/imgs/bg-full-cup-water.png')",
       },
       boxShadow: {
         "custom-glow":

@@ -13,7 +13,7 @@ import useContactNav from "../../../hooks/useContactNav";
 import ButtonStyled from "../../shared/ButtonStyled";
 
 const WhyOurTreatment = () => {
-  const { t } = useTranslation(["blogs", "common"]);
+  const { t } = useTranslation(["systems", "common"]);
   const { targetRef, isInView } = useScrollInToView();
   const goToContact = useContactNav();
 

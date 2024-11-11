@@ -1,19 +1,15 @@
-import PageContainer from "../components/shared/containers/PageContainer";
 import BlogsHero from "../components/sections/BlogsHero";
-import OurSystems from "../components/sections/OurSystems";
-import Testimonials from "../components/sections/Testimonials";
-import Banner from "../components/shared/Banner";
 import ContactUs from "../components/sections/ContactUs";
-import WhyOurTreatment from "../components/sections/WhyOurTreatment";
+import OurBlogs from "../components/sections/OurBlogs";
+import Banner from "../components/shared/Banner";
+import PageContainer from "../components/shared/containers/PageContainer";
 
 export default function Blogs() {
   return (
-    <PageContainer>
+    <PageContainer paddingTop>
       <BlogsHero />
-      <OurSystems showTitle />
-      <WhyOurTreatment />
-      <Testimonials />
       <Banner contact />
+      <OurBlogs />
       <ContactUs />
     </PageContainer>
   );

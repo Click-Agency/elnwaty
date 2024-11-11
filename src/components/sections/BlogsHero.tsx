@@ -1,45 +1,98 @@
 import SectionContainer from "../shared/containers/SectionContainer";
+import SimpleCard from "../shared/SimpleCard";
 import { trim } from "../../utils/functions/general";
-import SectionHeader from "../shared/SectionHeader";
 import { useTranslation } from "react-i18next";
+import blogOneImg from "../../assets/imgs/blog-one.png";
+import blogTwoImg from "../../assets/imgs/blog-two.png";
+import blogThreeImg from "../../assets/imgs/blog-three.png";
 import useScrollInToView from "../../hooks/useScrollInToView";
+import useActivation from "../../hooks/useActivation";
 
 const BlogsHero = () => {
-  const { t } = useTranslation(["blogs"]);
+  const { t } = useTranslation(["blogs", "common"]);
   const { targetRef, isInView } = useScrollInToView();
 
+  const blogsArr = [
+    {
+      img: blogOneImg,
+      title: t("coName", { ns: "common" }),
+      subTitle: t("hero.subtitle", { ns: "common" }),
+    },
+    {
+      img: blogTwoImg,
+      title: t("coName", { ns: "common" }),
+      subTitle: t("hero.subtitle", { ns: "common" }),
+    },
+    {
+      img: blogThreeImg,
+      title: t("coName", { ns: "common" }),
+      subTitle: t("hero.subtitle", { ns: "common" }),
+    },
+  ];
+
+  const { activationArr } = useActivation(blogsArr.length, 300, {
+    initializtion: isInView,
+  });
+
   return (
-    <SectionContainer
-      ref={targetRef}
-      className={trim(`
-        bg-cover
-        relative
-        h-[90vh]`)}
-      wraperClassName="h-full pt-52 items-center text-center"
-    >
-      <SectionHeader
-        title={t("title")}
+    <SectionContainer ref={targetRef} wraperClassName="lg:flex-row pt-6 gap-6">
+      <div
         className={trim(`
-          !text-responsive-cover
-          transition-[transform, opacity]
-          duration-500
-          ease-in-out
-          ${isInView ? "opacity-100" : "opacity-0"}
-          ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
-      />
-      <div className="bg-factory-pattern bg-cover absolute z-[1] top-0 right-0 w-full h-full mask-hero-top"></div>
-      <p
-        className={trim(`
-          text-primary 
-          text-responsive-sm
+          relative
+          flex-1
+          flex
+          flex-col
+          min-h-[300px]
+          bg-cover
+          bg-center
+          bg-full-cup-pattern
           transition-opacity
           duration-500
           ease-in-out
-          delay-500
           ${isInView ? "opacity-100" : "opacity-0"}`)}
       >
-        {t("description")}
-      </p>
+        <div
+          className={trim(`
+            absolute
+            bottom-0
+            left-0
+            flex
+            flex-col
+            w-full
+            p-6
+            text-white
+            bg-gradient-t-dark`)}
+        >
+          <h3 className="text-responsive-lg">
+            {t("coName", { ns: "common" })}
+          </h3>
+          <h4 className="text-responsive-md font-thin">
+            {t("hero.subtitle", { ns: "common" })}
+          </h4>
+        </div>
+      </div>
+
+      <div
+        className={trim(`
+          flex 
+          lg:flex-col 
+          justify-center 
+          lg:items-start 
+          items-center 
+          flex-wrap
+          gap-8 
+          md:gap-5 
+          flex-1`)}
+      >
+        {blogsArr.map((blog, i) => (
+          <SimpleCard
+            key={i}
+            {...blog}
+            className="lg:flex-row flex-col"
+            parentInToView={activationArr[i].active}
+          />
+        ))}
+      </div>
     </SectionContainer>
   );
 };
