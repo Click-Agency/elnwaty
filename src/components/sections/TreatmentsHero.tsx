@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import useScrollInToView from "../../hooks/useScrollInToView";
 
 const SystemsHero = () => {
-  const { t } = useTranslation(["systems"]);
+  const { t } = useTranslation(["treatments"]);
   const { targetRef, isInView } = useScrollInToView();
 
   return (
@@ -15,12 +15,12 @@ const SystemsHero = () => {
         bg-cover
         relative
         h-[90vh]`)}
-      wraperClassName="h-full pt-52 items-center text-center"
+      wraperClassName="h-full pt-52 items-center gap-2 text-center"
     >
       <SectionHeader
         title={t("title")}
         className={trim(`
-          !text-responsive-cover
+          !text-responsive-subCover
           transition-[transform, opacity]
           duration-500
           ease-in-out

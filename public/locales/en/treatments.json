@@ -1,0 +1,103 @@
+{
+  "title": "Dar Alnawati Water Treatment Systems",
+  "description": "Discover the comprehensive solutions that Dar Alnawati Water Treatment Solutions offers.",
+
+  "ourTreatments": {
+    "title": "Our Treatments",
+
+    "items": [
+      {
+        "title": "CIP Systems and UV Sterilizer",
+
+        "steps": [
+          {
+            "title": "CIP Membrane Cleaning",
+            "description": "Effortlessly maintain your water treatment system with our CIP Membrane Cleaning solutions. Designed for seamless and thorough cleaning, they ensure optimal performance and extend the life of your membranes."
+          },
+
+          {
+            "title": "UV Sterilizer",
+            "description": "Secure your water quality with our UV Sterilizers. By using ultraviolet light, these systems effectively eliminate harmful bacteria and microorganisms, delivering water that meets the highest standards of safety and purity."
+          }
+        ]
+      },
+
+      {
+        "title": "Containerized Systems",
+
+        "steps": [
+          {
+            "title": "Reverse Osmosis (RO)",
+            "description": " Our containerized Reverse Osmosis systems provide efficient desalination, perfect for producing potable water in remote locations. Compact yet powerful, they are ideal for both commercial and residential use."
+          },
+
+          {
+            "title": "Ultrafiltration (UF)",
+            "description": "Benefit from advanced filtration with our containerized UF systems. They remove particles, bacteria, and viruses, ensuring clean and safe water for a variety of applications."
+          },
+
+          {
+            "title": "Pre-Treatment Systems",
+            "description": "Prepare your water for further processing with our comprehensive pre-treatment solutions. These systems tackle suspended solids, organic matter, and chlorine, setting the stage for optimal performance of subsequent treatment processes."
+          },
+
+          {
+            "title": "Solar Desalination Plant",
+            "description": "Harness the power of the sun with our innovative solar desalination plants. They offer a sustainable solution for water treatment, ideal for off-grid and remote areas where conventional energy sources are limited."
+          }
+        ]
+      },
+
+      {
+        "title": "Water Filters and Softeners",
+
+        "steps": [
+          {
+            "title": "Water Media Filters",
+            "description": "Achieve superior water quality with our Water Media Filters. They efficiently remove sediment, rust, and other impurities, ensuring your water is clean and clear."
+          },
+
+          {
+            "title": "Water Softener Systems",
+            "description": "Protect your plumbing and appliances with our Water Softener Systems. These systems reduce water hardness, preventing scale buildup and extending the lifespan of your equipment."
+          },
+
+          {
+            "title": "Cartridge Filter Housings",
+            "description": " Our robust Cartridge Filter Housings provide a reliable solution for housing various types of filters. Easy to maintain, they ensure consistent performance and longevity of your filtration system."
+          }
+        ]
+      },
+
+      {
+        "title": "RO/Membrane Systems",
+
+        "steps": [
+          {
+            "title": "RO Systems",
+            "description": "Experience top-notch water purification with our RO Systems. Designed to remove dissolved salts, contaminants, and particles, these systems deliver pure water for a wide range of uses."
+          },
+
+          {
+            "title": "Membrane Systems",
+            "description": "Our Membrane Systems offer advanced filtration, ensuring removal of fine particles and microorganisms. Ideal for industrial and commercial applications, they guarantee high-quality water output."
+          }
+        ]
+      }
+    ]
+  },
+
+  "whyOurTreatment": {
+    "title": "Why Choose Dar Al-Nawat Water Treatment Equipment",
+
+    "items": {
+      "itemOne": "Experience and Leadership",
+
+      "itemTwo": "Advanced Technology",
+
+      "itemThree": "Comperhenive Solutions",
+
+      "itemFour": "Sustainability and Social Responsibility"
+    }
+  }
+}

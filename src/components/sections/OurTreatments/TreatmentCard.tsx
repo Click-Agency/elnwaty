@@ -1,20 +1,19 @@
 import useScrollInToView from "../../../hooks/useScrollInToView";
+import { SystemArr } from "../../../types/general";
 import { trim } from "../../../utils/functions/general";
 
 const TreatmentCard = ({
   className = "",
   img,
   title,
-  description,
+  steps,
   parentInToView,
-}: {
+}: SystemArr[0] & {
   className?: string;
-  img: string;
-  title: string;
-  description: string;
   parentInToView: boolean;
 }) => {
   const { targetRef, isInView } = useScrollInToView();
+
   return (
     <div
       ref={targetRef}
@@ -22,42 +21,46 @@ const TreatmentCard = ({
         flex
         flex-col
         items-center
-        justify-start
-        bg-mask-cyan-pattern
-        bg-cover
         gap-5
-        p-6
+        p-8
+        border-2
         shadow-lg
-        rounded-3xl
-        w-full
-        max-w-[350px]
+        rounded-xl
         transition-opacity
         duration-500
+        md:max-w-[80%]
         ease-in-out
         ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
         ${className}`)}
     >
-      <img src={img} alt="product" className="w-full max-w-28" />
+      <img src={img} alt="product" className="w-full max-w-[350px]" />
 
       <h3
         className={trim(`
-          text-responsive-2md
+          text-responsive-lg
           text-primary
-          font-bold
-          text-center`)}
+          font-semibold`)}
       >
         {title}
       </h3>
 
-      <p
+      <ul
         className={trim(`
-          text-responsive-xs
-          text-primary
-          font-medium
-          text-center`)}
+          flex
+          flex-col
+          gap-2
+          text-responsive-2sm
+          text-primary`)}
       >
-        {description}
-      </p>
+        {steps.map(({ title, description }, i) => (
+          <li className="flex gap-0.5 md:gap-2 md:flex-row flex-col" key={i}>
+            <h6 className="text-nowrap font-medium text-responsive-2sm">
+              {title}:
+            </h6>
+            <p className="text-responsive-xs">{description}</p>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

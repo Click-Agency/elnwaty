@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import SectionContainer from "../shared/containers/SectionContainer";
-import SectionHeader from "../shared/SectionHeader";
-import compeleteFilter from "../../assets/imgs/complete-filter.png";
-import ItemCard from "../shared/ItemCard";
-import { trim } from "../../utils/functions/general";
-import useScrollInToView from "../../hooks/useScrollInToView";
-import useActivation from "../../hooks/useActivation";
+import SectionContainer from "../../shared/containers/SectionContainer";
+import SectionHeader from "../../shared/SectionHeader";
+import compeleteFilter from "../../../assets/imgs/complete-filter.png";
+import { trim } from "../../../utils/functions/general";
+import useScrollInToView from "../../../hooks/useScrollInToView";
+import useActivation from "../../../hooks/useActivation";
+import ProductCard from "./productCard";
 
 const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
   const { t } = useTranslation(["home", "common"]);
@@ -58,7 +58,7 @@ const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
           mt-7`)}
       >
         {productsArr.map((product, i) => (
-          <ItemCard
+          <ProductCard
             key={i}
             {...product}
             parentInToView={activationArr[i].active}

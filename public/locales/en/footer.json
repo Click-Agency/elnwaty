@@ -4,31 +4,10 @@
   "signature": "This is a simple testimonials page screen designed as part of dailyui challenges. I created this animated card scroll for demonstrating the testimonial",
 
   "columns": {
-    "about": {
-      "title": "About",
-      "items": {
-        "about": "About",
-        "services": "Services",
-        "portfolio": "Portfolio"
-      }
-    },
+    "titleOne": "Navigation",
 
-    "contact": {
-      "title": "Contact",
-      "items": {
-        "about": "About",
-        "services": "Services",
-        "portfolio": "Portfolio"
-      }
-    },
+    "titleTwo": "Socials"
+  },
 
-    "social": {
-      "title": "Social",
-      "items": {
-        "about": "About",
-        "services": "Services",
-        "portfolio": "Portfolio"
-      }
-    }
-  }
+  "copyRights": "All rights reserved"
 }
