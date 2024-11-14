@@ -26,11 +26,12 @@ const TreatmentCard = ({
         border-2
         shadow-lg
         rounded-xl
-        transition-opacity
+        transition-[opacity,transform]
         duration-500
-        md:max-w-[80%]
+        md:max-w-[75%]
         ease-in-out
         ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
+        ${isInView && parentInToView ? "translate-y-0" : "translate-y-10"}
         ${className}`)}
     >
       <img src={img} alt="product" className="w-full max-w-[350px]" />
