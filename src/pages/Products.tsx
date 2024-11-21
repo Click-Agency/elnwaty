@@ -19,7 +19,7 @@ export default function Products() {
       />
       <OurProducts />
       <Banner
-        className="bg-tanks-pattern min-h-[250px] md:min-h-[600px] bg-fixed"
+        className="bg-tanks-pattern min-h-[250px] md:min-h-[600px]"
         parallax
         parallaxBg
         parallaxClassName="bg-blue-400/30"

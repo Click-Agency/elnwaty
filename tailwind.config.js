@@ -62,13 +62,15 @@ export default {
         "cup-water-pattern": "url('/assets/imgs/bg-cup-water.png')",
 
         "tanks-pattern": "url('/assets/imgs/bg-tanks-factory.png')",
-        "drops-pattern": "url(/assets/imgs/bg-drops.png')",
+
+        "drops-pattern": "url('/assets/imgs/bg-drops.png')",
 
         "mask-chemical-pattern": "url('/assets/imgs/masked-chemical.png')",
 
         "mask-factory-pattern": "url('/assets/imgs/masked-factory.png')",
 
-        "mask-maintenance-pattern": "url('/assets/imgs/masker-maintenance.png')",
+        "mask-maintenance-pattern":
+          "url('/assets/imgs/masker-maintenance.png')",
 
         "factory-pattern": "url('/assets/imgs/bg-factroy.png')",
 

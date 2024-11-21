@@ -8,7 +8,7 @@ import useContactNav from "../../hooks/useContactNav";
 
 const Banner = ({
   children,
-  className,
+  className = "",
   contact,
   parallaxBg,
   parallax,
@@ -29,9 +29,9 @@ const Banner = ({
     <SectionContainer
       className={`
         min-h-[200px]
-        bg-cover
         bg-no-repeat
         bg-center
+        bg-cover
         ${contact ? "bg-drops-pattern" : ""}
         ${parallax ? "bg-fixed relative" : ""}
         ${className}`}
