@@ -19,7 +19,7 @@ export default function About() {
           justify-center`}
       />
       <AboutDetails />
-      <Banner className="bg-mug-pattern  md:min-h-[450px]" />
+      <Banner className="bg-mug-pattern md:min-h-[450px]" />
       <OurConcepts />
       <ContactUs />
     </PageContainer>

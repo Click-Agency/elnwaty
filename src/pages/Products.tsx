@@ -18,7 +18,12 @@ export default function Products() {
           justify-center`}
       />
       <OurProducts />
-      <Banner className="bg-tanks-pattern min-h-[250px] md:min-h-[700px]" />
+      <Banner
+        className="bg-tanks-pattern min-h-[250px] md:min-h-[600px] bg-fixed"
+        parallax
+        parallaxBg
+        parallaxClassName="bg-blue-400/30"
+      />
       <Banner contact />
       <ContactUs />
     </PageContainer>

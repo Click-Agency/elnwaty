@@ -10,10 +10,16 @@ const Banner = ({
   children,
   className,
   contact,
+  parallaxBg,
+  parallax,
+  parallaxClassName,
 }: {
   children?: ReactNode;
   className?: string;
   contact?: boolean;
+  parallaxBg?: boolean;
+  parallax?: boolean;
+  parallaxClassName?: string;
 }) => {
   const { t } = useTranslation(["common"]);
   const { targetRef, isInView } = useScrollInToView();
@@ -27,9 +33,21 @@ const Banner = ({
         bg-no-repeat
         bg-center
         ${contact ? "bg-drops-pattern" : ""}
+        ${parallax ? "bg-fixed relative" : ""}
         ${className}`}
       wraperClassName="h-full"
     >
+      {parallaxBg && parallax && (
+        <div
+          className={trim(`
+          absolute 
+          top-0 
+          left-0 
+          w-full 
+          h-full
+          ${parallaxClassName}`)}
+        ></div>
+      )}
       {contact && (
         <div
           ref={targetRef}
@@ -61,6 +79,7 @@ const Banner = ({
           />
         </div>
       )}
+
       {children}
     </SectionContainer>
   );
