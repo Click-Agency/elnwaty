@@ -46,12 +46,19 @@ const ConceptCard = ({
       >
         <h3 className="text-responsive-xl font-semibold">{title}</h3>
 
-        {description && <p className="text-responsive-lg">{description}</p>}
+        {description && (
+          <p className="text-responsive-2md md:text-responsive-md">
+            {description}
+          </p>
+        )}
 
         {items && (
           <ul className="flex flex-col gap-4">
             {items.map((item, index) => (
-              <li className="text-responsive-lg" key={index}>
+              <li
+                className="text-responsive-2md md:text-responsive-md"
+                key={index}
+              >
                 {item}
               </li>
             ))}

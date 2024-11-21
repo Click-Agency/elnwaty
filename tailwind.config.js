@@ -43,38 +43,38 @@ export default {
         "gradient-t-dark":
           "linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.0) 100%)",
 
-        "hero-pattern": "url('/public/assets/imgs/bg-hero.png')",
+        "hero-pattern": "url('/assets/imgs/bg-hero.png')",
 
-        "wave-pattern": "url('/public/assets/imgs/bg-wave.png')",
+        "wave-pattern": "url('/assets/imgs/bg-wave.png')",
 
-        "water-pattern": "url('/public/assets/imgs/bg-water-2x.png')",
+        "water-pattern": "url('/assets/imgs/bg-water-2x.png')",
 
-        "cyan-pattern": "url('/public/assets/imgs/bg-gradient-cyan.png')",
+        "cyan-pattern": "url('/assets/imgs/bg-gradient-cyan.png')",
 
-        "move-slim-pattern": "url('/public/assets/imgs/bg-moving-water-slim.png')",
+        "move-slim-pattern": "url('/assets/imgs/bg-moving-water-slim.png')",
 
-        "moving-wave-pattern": "url('/public/assets/imgs/bg-moving-wave.png')",
+        "moving-wave-pattern": "url('/assets/imgs/bg-moving-wave.png')",
 
         "gradient-cyan": "linear-gradient(90deg, #e2f5fe 0%, #cae4ef 100%)",
 
-        "mug-pattern": "url('/public/assets/imgs/bg-mug.png')",
+        "mug-pattern": "url('/assets/imgs/bg-mug.png')",
 
-        "cup-water-pattern": "url('/public/assets/imgs/bg-cup-water.png')",
+        "cup-water-pattern": "url('/assets/imgs/bg-cup-water.png')",
 
-        "tanks-pattern": "url('/public/assets/imgs/bg-tanks-factory.png')",
-        "drops-pattern": "url(/public/assets/imgs/bg-drops.png')",
+        "tanks-pattern": "url('/assets/imgs/bg-tanks-factory.png')",
+        "drops-pattern": "url(/assets/imgs/bg-drops.png')",
 
-        "mask-chemical-pattern": "url('/public/assets/imgs/masked-chemical.png')",
+        "mask-chemical-pattern": "url('/assets/imgs/masked-chemical.png')",
 
-        "mask-factory-pattern": "url('/public/assets/imgs/masked-factory.png')",
+        "mask-factory-pattern": "url('/assets/imgs/masked-factory.png')",
 
-        "mask-maintenance-pattern": "url('/public/assets/imgs/masker-maintenance.png')",
+        "mask-maintenance-pattern": "url('/assets/imgs/masker-maintenance.png')",
 
-        "factory-pattern": "url('/public/assets/imgs/bg-factroy.png')",
+        "factory-pattern": "url('/assets/imgs/bg-factroy.png')",
 
-        "mask-cyan-pattern": "url('/public/assets/imgs/bg-mask-cyan.png')",
+        "mask-cyan-pattern": "url('/assets/imgs/bg-mask-cyan.png')",
 
-        "full-cup-pattern": "url('/public/assets/imgs/bg-full-cup-water.png')",
+        "full-cup-pattern": "url('/assets/imgs/bg-full-cup-water.png')",
       },
       boxShadow: {
         "custom-glow":

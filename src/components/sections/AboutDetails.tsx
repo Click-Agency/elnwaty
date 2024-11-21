@@ -35,7 +35,7 @@ export const AboutDetails = () => {
           {t(`coName`, { ns: "common" })}
         </h3>
 
-        <p className="text-responsive-md">{t(`description`)}</p>
+        <p className="text-responsive-2md">{t(`description`)}</p>
 
         <ButtonStyled
           className="md:self-start"
