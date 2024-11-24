@@ -1,4 +1,3 @@
-import ContactUs from "../components/sections/ContactUs";
 import OurProducts from "../components/sections/OurProducts";
 import Banner from "../components/shared/Banner";
 import PageContainer from "../components/shared/containers/PageContainer";
@@ -25,7 +24,6 @@ export default function Products() {
         parallaxClassName="bg-blue-400/30"
       />
       <Banner contact />
-      <ContactUs />
     </PageContainer>
   );
 }

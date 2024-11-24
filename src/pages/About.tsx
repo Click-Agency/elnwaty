@@ -1,6 +1,5 @@
 import { AboutDetails } from "../components/sections/AboutDetails";
 import PageHero from "../components/shared/PageHero";
-import ContactUs from "../components/sections/ContactUs";
 import OurConcepts from "../components/sections/OurConcepts";
 import Banner from "../components/shared/Banner";
 import PageContainer from "../components/shared/containers/PageContainer";
@@ -21,7 +20,6 @@ export default function About() {
       <AboutDetails />
       <Banner className="bg-mug-pattern md:min-h-[450px]" />
       <OurConcepts />
-      <ContactUs />
     </PageContainer>
   );
 }

@@ -4,7 +4,8 @@ import { trim } from "../../utils/functions/general";
 import { useTranslation } from "react-i18next";
 import ButtonStyled from "./ButtonStyled";
 import useScrollInToView from "../../hooks/useScrollInToView";
-import useContactNav from "../../hooks/useContactNav";
+import { useNavigate } from "react-router-dom";
+import { appRoutes } from "../../config";
 
 const Banner = ({
   children,
@@ -23,7 +24,8 @@ const Banner = ({
 }) => {
   const { t } = useTranslation(["common"]);
   const { targetRef, isInView } = useScrollInToView();
-  const goToContact = useContactNav();
+  const push = useNavigate();
+  //const goToContact = useContactNav();
 
   return (
     <SectionContainer
@@ -75,7 +77,7 @@ const Banner = ({
             ripple
             hover
             title={t(`contactUs`)}
-            onClick={goToContact}
+            onClick={() => push(appRoutes.contact)}
           />
         </div>
       )}

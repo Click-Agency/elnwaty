@@ -4,20 +4,20 @@ import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
 const ContactInfo = () => {
-  const { t } = useTranslation(["home"]);
+  const { t } = useTranslation(["contact"]);
 
   const contactInfoArr = [
     {
       icon: <FaPhone className="text-white" />,
-      text: t("contactUs.info.phone"),
+      text: t("info.phone"),
     },
     {
       icon: <MdEmail className="text-white" />,
-      text: t("contactUs.info.email"),
+      text: t("info.email"),
     },
     {
       icon: <FaLocationDot className="text-white" />,
-      text: t("contactUs.info.address"),
+      text: t("info.address"),
     },
   ];
 
@@ -27,20 +27,20 @@ const ContactInfo = () => {
         flex
         flex-col
         h-full
-        justify-evenly
+        justify-around
         bg-cyan-pattern
         bg-cover
+        w-full
         p-10
         gap-7
-        max-w-[450px]
         rounded-3xl`)}
     >
       <div className="flex flex-col gap-4">
         <h3 className="text-responsive-lg font-semibold text-white">
-          {t("contactUs.info.title")}
+          {t("info.title")}
         </h3>
         <p className="text-responsive-sm text-gray-100">
-          {t("contactUs.info.description")}
+          {t("info.description")}
         </p>
       </div>
 

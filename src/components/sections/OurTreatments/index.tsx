@@ -11,12 +11,14 @@ import { trim } from "../../../utils/functions/general";
 import TreatmentCard from "./TreatmentCard";
 import { SystemArr } from "../../../types/general";
 import ButtonStyled from "../../shared/ButtonStyled";
-import useContactNav from "../../../hooks/useContactNav";
+import { appRoutes } from "../../../config";
+import { useNavigate } from "react-router-dom";
 
 const OurTreatments = () => {
   const { t } = useTranslation(["treatments", "common"]);
   const { targetRef, isInView } = useScrollInToView();
-  const goToContact = useContactNav();
+  const push = useNavigate();
+  //const goToContact = useContactNav();
 
   const imgsArr = [roSystem, filterSystem, containerSystem, uvSystem];
 
@@ -60,7 +62,7 @@ const OurTreatments = () => {
         bg
         title={t("shopNow", { ns: "common" })}
         className="mt-7 md:mx-auto"
-        onClick={goToContact}
+        onClick={() => push(appRoutes.contact)}
       />
     </SectionContainer>
   );

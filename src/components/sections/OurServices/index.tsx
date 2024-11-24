@@ -9,12 +9,14 @@ import service4 from "../../../assets/imgs/service-4.png";
 import SectionHeader from "../../shared/SectionHeader";
 import useActivation from "../../../hooks/useActivation";
 import useScrollInToView from "../../../hooks/useScrollInToView";
-import useContactNav from "../../../hooks/useContactNav";
+import { appRoutes } from "../../../config";
+import { useNavigate } from "react-router-dom";
 
 const OurServices = () => {
   const { t } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
-  const goToContact = useContactNav();
+  const push = useNavigate();
+  //const goToContact = useContactNav();
 
   const servicesArr = [
     {
@@ -22,7 +24,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionOne"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: goToContact,
+        onClickHandler: () => push(appRoutes.contact),
       },
     },
     {
@@ -30,7 +32,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionTwo"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: goToContact,
+        onClickHandler: () => push(appRoutes.contact),
       },
     },
     {
@@ -38,7 +40,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionThree"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: goToContact,
+        onClickHandler: () => push(appRoutes.contact),
       },
     },
     {
@@ -46,7 +48,7 @@ const OurServices = () => {
       description: t("ourServices.items.descriptionFour"),
       btn: {
         title: t("contactUs", { ns: "common" }),
-        onClickHandler: goToContact,
+        onClickHandler: () => push(appRoutes.contact),
       },
     },
   ];

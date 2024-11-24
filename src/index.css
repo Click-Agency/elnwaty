@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.PhoneInputInput {
+  @apply focus:!outline-none;
+}
+
 @layer base {
   :root {
     @apply scroll-smooth;

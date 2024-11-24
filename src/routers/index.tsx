@@ -9,6 +9,7 @@ const About = lazy(() => import("../pages/About"));
 const Products = lazy(() => import("../pages/Products"));
 const Blogs = lazy(() => import("../pages/Blogs"));
 const Treatments = lazy(() => import("../pages/Treatments"));
+const Contact = lazy(() => import("../pages/Contact"));
 
 export default function Routers() {
   return (
@@ -19,6 +20,7 @@ export default function Routers() {
         <Route path={appRoutes.products} element={<Products />} />
         <Route path={appRoutes.blogs} element={<Blogs />} />
         <Route path={appRoutes.treatments} element={<Treatments />} />
+        <Route path={appRoutes.contact} element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Suspense>

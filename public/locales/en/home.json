@@ -39,6 +39,29 @@
     }
   },
 
+  "achievements": {
+    "title": "Our Achievements",
+
+    "items": [
+      {
+        "number": "125",
+        "title": "Statfized Clients"
+      },
+      {
+        "number": "9",
+        "title": "Years of Experience"
+      },
+      {
+        "number": "150",
+        "title": "Projects Completed"
+      },
+      {
+        "number": "88",
+        "title": "Units Installed"
+      }
+    ]
+  },
+
   "ourProducts": {
     "title": "Our Products",
     "items": {
@@ -73,55 +96,6 @@
       "cardThree": {
         "name": "John Smith",
         "feedback": "I am very happy with the service provided by Dar Al Nawati Company. They are very professional and always on time. I would recommend them to anyone who needs water treatment services."
-      }
-    }
-  },
-
-  "contactUs": {
-    "title": "Get in touch",
-
-    "info": {
-      "title": "Contact Information",
-      "description": "We are here to help you. Contact us for more information about our services and products.",
-      "phone": "+96626610803",
-      "email": "Support@mail.com",
-      "address": "Saudi Arabia, Riyadh"
-    },
-
-    "form": {
-      "name": {
-        "placeholder": "Your Name",
-        "errors": {
-          "required": "Name is required",
-          "min": "Name must be at least 3 characters",
-          "max": "Name must be at most 20 characters"
-        }
-      },
-
-      "email": {
-        "placeholder": "Your Email",
-        "errors": {
-          "required": "Email is required",
-          "invalid": "Email is invalid"
-        }
-      },
-
-      "subject": {
-        "placeholder": "Subject",
-        "errors": {
-          "required": "Subject is required",
-          "min": "Subject must be at least 3 characters",
-          "max": "Subject must be at most 60 characters"
-        }
-      },
-
-      "message": {
-        "placeholder": "Your Message",
-        "errors": {
-          "required": "Message is required",
-          "min": "Message must be at least 20 characters",
-          "max": "Message must be at most 400 characters"
-        }
       }
     }
   }

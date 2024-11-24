@@ -1,4 +1,4 @@
-import ContactUs from "../components/sections/ContactUs";
+import Achievements from "../components/sections/Achievements";
 import HomeHero from "../components/sections/HomeHero";
 import OurProducts from "../components/sections/OurProducts";
 import OurServices from "../components/sections/OurServices";
@@ -14,9 +14,9 @@ export default function Home() {
       <WelcomeBanner />
       <OurServices />
       <WhyChooseUs />
-      <OurProducts showTitle/>
+      <Achievements />
+      <OurProducts showTitle />
       <Testimonials />
-      <ContactUs />
     </PageContainer>
   );
 }

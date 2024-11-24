@@ -102,6 +102,7 @@ const ServiceCard = ({
           border-2
           border-white
           min-h-[27.5rem]
+          w-full
           justify-start
           transition-all
           duration-300

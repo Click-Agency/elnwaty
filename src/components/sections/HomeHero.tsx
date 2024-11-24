@@ -3,12 +3,14 @@ import SectionContainer from "../shared/containers/SectionContainer";
 import { trim } from "../../utils/functions/general";
 import ButtonStyled from "../shared/ButtonStyled";
 import useScrollInToView from "../../hooks/useScrollInToView";
-import useContactNav from "../../hooks/useContactNav";
+import { useNavigate } from "react-router-dom";
+import { appRoutes } from "../../config";
 
 const HomeHero = () => {
   const { t, i18n } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
-  const goToContact = useContactNav();
+  const push = useNavigate();
+  //const goToContact = useContactNav();
 
   return (
     <SectionContainer
@@ -90,7 +92,7 @@ const HomeHero = () => {
             ${isInView ? "opacity-100" : "opacity-0"}`)}
           size="custom"
           title={t("contactUs", { ns: "common" })}
-          onClick={goToContact}
+          onClick={() => push(appRoutes.contact)}
         />
       </div>
     </SectionContainer>

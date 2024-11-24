@@ -4,12 +4,14 @@ import filterChangeImg from "../../assets/imgs/filter-change.png";
 import { trim } from "../../utils/functions/general";
 import ButtonStyled from "../shared/ButtonStyled";
 import useScrollInToView from "../../hooks/useScrollInToView";
-import useContactNav from "../../hooks/useContactNav";
+import { useNavigate } from "react-router-dom";
+import { appRoutes } from "../../config";
 
 const WelcomeBanner = () => {
   const { t } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
-  const goToContact = useContactNav();
+  const push = useNavigate();
+  //const goToContact = useContactNav();
 
   return (
     <SectionContainer
@@ -91,7 +93,7 @@ const WelcomeBanner = () => {
           hover
           title={t("contactUs", { ns: "common" })}
           bg
-          onClick={goToContact}
+          onClick={() => push(appRoutes.contact)}
         />
       </div>
     </SectionContainer>

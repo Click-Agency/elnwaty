@@ -7,4 +7,9 @@ type SystemArr = {
   }[];
 }[];
 
-export type { SystemArr };
+type AchievementsArr = {
+  title: string;
+  number: number;
+}[];
+
+export type { SystemArr, AchievementsArr };

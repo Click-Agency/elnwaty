@@ -23,6 +23,7 @@ const Nav = () => {
     { name: t("nav.products"), link: appRoutes.products },
     { name: t("nav.blogs"), link: appRoutes.blogs },
     { name: t("nav.treatments"), link: appRoutes.treatments },
+    { name: t("nav.contact"), link: appRoutes.contact },
   ];
 
   const { activationArr } = useActivation(navArr.length, 300);

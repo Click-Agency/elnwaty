@@ -4,12 +4,14 @@ import SectionContainer from "../shared/containers/SectionContainer";
 import tankImg from "../../assets/imgs/tank.png";
 import { useTranslation } from "react-i18next";
 import useScrollInToView from "../../hooks/useScrollInToView";
-import useContactNav from "../../hooks/useContactNav";
+import { useNavigate } from "react-router-dom";
+import { appRoutes } from "../../config";
 
 export const AboutDetails = () => {
   const { t } = useTranslation(["about", "common"]);
   const { targetRef, isInView } = useScrollInToView();
-  const goToContact = useContactNav();
+  //const goToContact = useContactNav();
+  const push = useNavigate();
 
   return (
     <SectionContainer
@@ -44,7 +46,7 @@ export const AboutDetails = () => {
           ripple
           size="lg"
           title={t(`contactUs`, { ns: "common" })}
-          onClick={goToContact}
+          onClick={() => push(appRoutes.contact)}
         />
       </div>
 

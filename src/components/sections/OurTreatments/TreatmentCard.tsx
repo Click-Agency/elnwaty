@@ -7,10 +7,9 @@ const TreatmentCard = ({
   img,
   title,
   steps,
-  parentInToView,
 }: SystemArr[0] & {
   className?: string;
-  parentInToView: boolean;
+  parentInToView?: boolean;
 }) => {
   const { targetRef, isInView } = useScrollInToView();
 
@@ -30,8 +29,8 @@ const TreatmentCard = ({
         duration-500
         md:max-w-[75%]
         ease-in-out
-        ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
-        ${isInView && parentInToView ? "translate-y-0" : "translate-y-10"}
+        ${isInView ? "opacity-100" : "opacity-0"}
+        ${isInView ? "translate-y-0" : "translate-y-10"}
         ${className}`)}
     >
       <img src={img} alt="product" className="w-full max-w-[350px]" />

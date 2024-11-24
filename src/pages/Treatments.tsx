@@ -3,7 +3,6 @@ import TreatmentsHero from "../components/sections/TreatmentsHero";
 import OurTreatments from "../components/sections/OurTreatments";
 import Testimonials from "../components/sections/Testimonials";
 import Banner from "../components/shared/Banner";
-import ContactUs from "../components/sections/ContactUs";
 import WhyOurTreatment from "../components/sections/WhyOurTreatment";
 
 export default function Systems() {
@@ -14,7 +13,6 @@ export default function Systems() {
       <WhyOurTreatment />
       <Testimonials />
       <Banner contact />
-      <ContactUs />
     </PageContainer>
   );
 }

@@ -28,7 +28,7 @@ const TestimonialCard = ({
         gap-4
         border
         shadow-lg
-        max-w-[20rem]
+        max-w-[22rem]
         bg-white
         rounded-xl
         p-10
@@ -36,8 +36,8 @@ const TestimonialCard = ({
         duration-500
         ease-in-out
         ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
-        ${isInView && parentInToView ? "translate-y-0" : "translate-y-5"}
         ${className}`)}
+      //${isInView && parentInToView ? "translate-y-0" : "translate-y-5"}
     >
       <img src={img} alt={name} className="w-24 h-24 rounded-full" />
 
