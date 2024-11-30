@@ -1,5 +1,6 @@
 import { HTMLAttributes, ReactNode } from "react";
 import { trim } from "../../utils/functions/general.ts";
+import FloatingButtons from "../shared/FloatingButtons.tsx";
 
 const Layout = ({
   children,
@@ -22,6 +23,7 @@ const Layout = ({
     {...attributes}
   >
     {children}
+    <FloatingButtons />
   </div>
 );
 
