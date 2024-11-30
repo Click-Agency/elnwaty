@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ButtonStyled from "./ButtonStyled";
-import { FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt , FaWhatsapp } from "react-icons/fa";
 import { trim } from "../../utils/functions/general";
 
 const FloatingButtons = () => {
@@ -8,7 +8,7 @@ const FloatingButtons = () => {
 
   const btnsArr = [
     {
-      icon: <FaPhone className="md:w-7 md:h-7 w-6 h-6" />,
+      icon: <FaPhoneAlt  className="md:w-7 md:h-7 w-6 h-6" />,
       color: "bg-blue-500",
       hoverColor: "hover:bg-blue-700",
       href: "",
