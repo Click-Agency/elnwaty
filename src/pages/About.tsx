@@ -13,7 +13,7 @@ export default function About() {
           bg-move-slim-pattern
           md:bg-contain
           bg-no-repeat 
-          md:bg-bottom
+          bg-bottom
           h-[70vh]
           justify-center`}
       />
