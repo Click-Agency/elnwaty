@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { trim } from "../../../utils/functions/general";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import ButtonStyled from "../../shared/ButtonStyled";
 
 const ContactInfo = () => {
   const { t } = useTranslation(["contact"]);
@@ -10,14 +11,17 @@ const ContactInfo = () => {
     {
       icon: <FaPhone className="text-white" />,
       text: t("info.phone"),
+      href: "tel:+20123456789",
     },
     {
       icon: <MdEmail className="text-white" />,
       text: t("info.email"),
+      href: "mailto:",
     },
     {
       icon: <FaLocationDot className="text-white" />,
       text: t("info.address"),
+      href: undefined,
     },
   ];
 
@@ -45,17 +49,27 @@ const ContactInfo = () => {
       </div>
 
       <ul className={`flex flex-col gap-4 text-responsive-2md`}>
-        {contactInfoArr.map((info, i) => (
-          <li
+        {contactInfoArr.map(({ icon, href, text }, i) => (
+          // <li
+          //   key={i}
+          //   className={trim(`
+          //     flex
+          //     items-center
+          //     gap-2`)}
+          // >
+          //   {info.icon}
+          //   <span className="text-white">{info.text}</span>
+          // </li>
+          <ButtonStyled
+            className={`
+              w-fit
+              hover:text-green-500`}
             key={i}
-            className={trim(`
-              flex 
-              items-center 
-              gap-2`)}
-          >
-            {info.icon}
-            <span className="text-white">{info.text}</span>
-          </li>
+            title={text}
+            href={href}
+            size="custom"
+            SvgIcon={icon}
+          />
         ))}
       </ul>
     </div>

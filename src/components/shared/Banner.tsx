@@ -6,6 +6,7 @@ import ButtonStyled from "./ButtonStyled";
 import useScrollInToView from "../../hooks/useScrollInToView";
 import { useNavigate } from "react-router-dom";
 import { appRoutes } from "../../config";
+import SectionHeader from "./SectionHeader";
 
 const Banner = ({
   children,
@@ -13,6 +14,9 @@ const Banner = ({
   contact,
   parallaxBg,
   parallax,
+  title,
+  titleText,
+  titleClassName,
   parallaxClassName,
 }: {
   children?: ReactNode;
@@ -20,6 +24,9 @@ const Banner = ({
   contact?: boolean;
   parallaxBg?: boolean;
   parallax?: boolean;
+  title?: boolean;
+  titleText?: string;
+  titleClassName?: string;
   parallaxClassName?: string;
 }) => {
   const { t } = useTranslation(["common"]);
@@ -37,8 +44,19 @@ const Banner = ({
         ${contact ? "bg-drops-pattern" : ""}
         ${parallax ? "bg-fixed relative" : ""}
         ${className}`}
-      wraperClassName="h-full"
+      wraperClassName="h-full justify-center"
     >
+      {(title || titleText) && (
+        <SectionHeader
+          className={`
+            text-white 
+            mt-4 z-[1]
+            text-shadow-lg 
+            ${titleClassName}`}
+          title={titleText || t("coName")}
+        />
+      )}
+
       {parallaxBg && parallax && (
         <div
           className={trim(`
@@ -50,6 +68,7 @@ const Banner = ({
           ${parallaxClassName}`)}
         ></div>
       )}
+
       {contact && (
         <div
           ref={targetRef}

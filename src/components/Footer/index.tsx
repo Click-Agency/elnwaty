@@ -26,6 +26,10 @@ const Footer = () => {
           name: t("nav.treatments", { ns: "header" }),
           link: appRoutes.treatments,
         },
+        {
+          name: t("nav.contact", { ns: "header" }),
+          link: appRoutes.contact,
+        },
       ],
     },
     {

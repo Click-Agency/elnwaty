@@ -20,7 +20,7 @@ const OurTreatments = () => {
   const push = useNavigate();
   //const goToContact = useContactNav();
 
-  const imgsArr = [roSystem, filterSystem, containerSystem, uvSystem];
+  const imgsArr = [uvSystem, filterSystem, containerSystem, roSystem];
 
   const systemsArr: SystemArr = Object.values(
     t("ourTreatments.items", { returnObjects: true })

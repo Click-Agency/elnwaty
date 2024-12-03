@@ -63,9 +63,10 @@ const Testimonials = () => {
         ref={targetRef}
         modules={[Autoplay]}
         slidesPerView={"auto"}
-        loop
         autoplay={{ delay: 2000, disableOnInteraction: false }}
         spaceBetween={20}
+        loop={testimonialsArr.length < 4 ? false : true}
+        centerInsufficientSlides
         dir="ltr"
         className={t(`
           w-full 

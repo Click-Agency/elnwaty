@@ -32,10 +32,6 @@ const OurProducts = ({ showTitle }: { showTitle?: boolean }) => {
       img: compeleteFilter,
       description: t("ourProducts.items.descriptionFive"),
     },
-    {
-      img: compeleteFilter,
-      description: t("ourProducts.items.descriptionSix"),
-    },
   ];
 
   const { activationArr } = useActivation(productsArr.length, 300, {

@@ -16,13 +16,16 @@ export default function Products() {
           h-[100vh]
           justify-center`}
       />
-      <OurProducts />
+      <OurProducts showTitle />
       <Banner
-        className="bg-tanks-pattern min-h-[250px] md:min-h-[600px]"
+        title
+        titleClassName="text-white mt-4 z-[1]"
+        className="bg-tanks-pattern min-h-[200px] md:min-h-[400px] "
         parallax
         parallaxBg
         parallaxClassName="bg-blue-400/30"
       />
+      <OurProducts showTitle />
       <Banner contact />
     </PageContainer>
   );
