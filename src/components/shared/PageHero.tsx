@@ -26,6 +26,7 @@ const AboutHero = ({
           transition-[transform, opacity]
           duration-500
           ease-in-out
+          text-shadow-lg
           ${isInView ? "opacity-100" : "opacity-0"}
           ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
       />
