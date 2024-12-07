@@ -10,7 +10,6 @@ const HomeHero = () => {
   const { t, i18n } = useTranslation(["home", "common"]);
   const { targetRef, isInView } = useScrollInToView();
   const push = useNavigate();
-  //const goToContact = useContactNav();
 
   return (
     <SectionContainer
