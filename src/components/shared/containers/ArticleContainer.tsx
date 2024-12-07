@@ -1,7 +1,7 @@
 import { trim } from "../../../utils/functions/general";
 import { ForwardedRef, forwardRef, HTMLAttributes, ReactNode } from "react";
 
-const SectionContainer = forwardRef(
+const ArticleContainer = forwardRef(
   (
     {
       children,
@@ -16,7 +16,7 @@ const SectionContainer = forwardRef(
       HTMLAttributes<HTMLElement>,
     ref: ForwardedRef<HTMLElement>
   ) => (
-    <section
+    <article
       id="section-container"
       ref={ref}
       className={trim(` 
@@ -42,8 +42,8 @@ const SectionContainer = forwardRef(
       >
         {children}
       </div>
-    </section>
+    </article>
   )
 );
 
-export default SectionContainer;
+export default ArticleContainer;

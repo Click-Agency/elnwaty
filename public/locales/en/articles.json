@@ -5,7 +5,7 @@
 
     "content": {
       "title1": "What Are PFAS?",
-      "description1": "PFAS are used in products like non-stick cookware, firefighting foams, and water-repellent fabrics. They resist degradation, accumulating in water sources and potentially causing health risks such as cancer, hormone disruption, and immune system suppression.",
+      "descriptionTitle1": "PFAS are used in products like non-stick cookware, firefighting foams, and water-repellent fabrics. They resist degradation, accumulating in water sources and potentially causing health risks such as cancer, hormone disruption, and immune system suppression.",
 
       "title2": "How to Remove PFAS from Water",
       "itemsTitle2": [
@@ -150,13 +150,13 @@
 
     "content": {
       "title1": "The Need for Water Treatment",
-      "description1": "Saudi Arabia’s natural water resources are limited. Without proper treatment, water quality can impact industries, public health, and environmental sustainability. That’s where Dar Alnawaty steps in.",
+      "descriptionTitle1": "Saudi Arabia’s natural water resources are limited. Without proper treatment, water quality can impact industries, public health, and environmental sustainability. That’s where Dar Alnawaty steps in.",
 
       "title2": "Corporate Solutions",
-      "description2": "We provide systems capable of producing up to 500 tons of purified water daily, ensuring businesses operate smoothly",
+      "descriptionTitle2": "We provide systems capable of producing up to 500 tons of purified water daily, ensuring businesses operate smoothly",
 
       "title3": "Residential Offerings",
-      "description3": "Villa owners trust our compact purification units to maintain water quality for daily use",
+      "descriptionTitle3": "Villa owners trust our compact purification units to maintain water quality for daily use",
 
       "title4": "Our Commitment to Efficiency",
       "itemsTitle4": [
@@ -180,8 +180,8 @@
 
   "article4": {
     "title": "Addressing Industrial Water Contamination with Advanced Water Treatment Solutions",
-    "description1": "Industries in Saudi Arabia face a significant challenge: water contamination. From manufacturing to construction, industrial processes generate wastewater containing harmful pollutants, including chemicals, heavy metals, and organic compounds. Without proper treatment, this water poses risks to the environment, public health, and operational efficiency.",
-    "description2": "Dar Alnawaty Water Treatment Company, with its 18 years of expertise, provides tailored solutions to address this pressing issue, ensuring industries meet environmental regulations while optimizing water usage.",
+    "description": "Industries in Saudi Arabia face a significant challenge: water contamination. From manufacturing to construction, industrial processes generate wastewater containing harmful pollutants, including chemicals, heavy metals, and organic compounds. Without proper treatment, this water poses risks to the environment, public health, and operational efficiency.",
+    "info": "Dar Alnawaty Water Treatment Company, with its 18 years of expertise, provides tailored solutions to address this pressing issue, ensuring industries meet environmental regulations while optimizing water usage.",
 
     "content": {
       "title1": "Understanding the Problem: Industrial Water Contamination",
@@ -284,7 +284,7 @@
     },
 
     "footer": "Water contamination is a significant industrial challenge in Saudi Arabia, but it’s not insurmountable. Dar Alnawaty Water Treatment Company provides innovative, tailored solutions that empower industries to manage wastewater effectively, protect the environment, and save costs",
-    "footer2": "Partner with Dar Alnawaty for sustainable water management that supports your business goals and environmental commitments"
+    "info2": "Partner with Dar Alnawaty for sustainable water management that supports your business goals and environmental commitments"
   },
 
   "article5": {
@@ -373,6 +373,6 @@
     },
 
     "footer": "Reducing water waste requires collective efforts from individuals, industries, and governments. By implementing efficient water management practices, we can minimize water waste, lower costs, and ensure a sustainable future for all",
-    "footer2": "Contact us to learn more"
+    "info2": "Contact us to learn more"
   }
 }

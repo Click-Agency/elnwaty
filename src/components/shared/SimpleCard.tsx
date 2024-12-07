@@ -8,6 +8,7 @@ const SimpleCard = ({
   className = "",
   imgClassName = "",
   parentInToView,
+  ...attributes
 }: {
   img: string;
   title: string;
@@ -31,6 +32,7 @@ const SimpleCard = ({
         ease-in-out
         ${parentInToView && isInView ? "opacity-100" : "opacity-0"}
         ${className}`)}
+      {...attributes}
     >
       <img
         src={img}

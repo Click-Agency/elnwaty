@@ -7,26 +7,49 @@ import blogTwoImg from "../../assets/imgs/blog-two.png";
 import blogThreeImg from "../../assets/imgs/blog-three.png";
 import useScrollInToView from "../../hooks/useScrollInToView";
 import useActivation from "../../hooks/useActivation";
+import { useNavigate } from "react-router-dom";
+import { appRoutes } from "../../config";
+import ArticlesEnum from "../../enum/Articles";
 
 const BlogsHero = () => {
   const { t } = useTranslation(["blogs", "common"]);
   const { targetRef, isInView } = useScrollInToView();
+  const push = useNavigate();
+
+  const blogsHeadersArr: { title: string; subTitle: string }[] = Object.values(
+    t("articles", { returnObjects: true })
+  ).map((item) => ({
+    title: item.title,
+    subTitle: item.subTitle,
+  }));
 
   const blogsArr = [
     {
       img: blogOneImg,
-      title: t("coName", { ns: "common" }),
-      subTitle: t("hero.subtitle", { ns: "common" }),
+      title: blogsHeadersArr[1].title,
+      subTitle: blogsHeadersArr[1].subTitle,
+      onClick: () =>
+        push(
+          `${appRoutes.blogs}${appRoutes.articlesQuery.ref}${ArticlesEnum.SECOND}`
+        ),
     },
     {
       img: blogTwoImg,
-      title: t("coName", { ns: "common" }),
-      subTitle: t("hero.subtitle", { ns: "common" }),
+      title: blogsHeadersArr[2].title,
+      subTitle: blogsHeadersArr[2].subTitle,
+      onClick: () =>
+        push(
+          `${appRoutes.blogs}${appRoutes.articlesQuery.ref}${ArticlesEnum.THIRD}`
+        ),
     },
     {
       img: blogThreeImg,
-      title: t("coName", { ns: "common" }),
-      subTitle: t("hero.subtitle", { ns: "common" }),
+      title: blogsHeadersArr[3].title,
+      subTitle: blogsHeadersArr[3].subTitle,
+      onClick: () =>
+        push(
+          `${appRoutes.blogs}${appRoutes.articlesQuery.ref}${ArticlesEnum.FOURTH}`
+        ),
     },
   ];
 
@@ -49,7 +72,14 @@ const BlogsHero = () => {
           transition-opacity
           duration-500
           ease-in-out
+          cursor-pointer
+          group
           ${isInView ? "opacity-100" : "opacity-0"}`)}
+        onClick={() =>
+          push(
+            `${appRoutes.blogs}${appRoutes.articlesQuery.ref}${ArticlesEnum.FIRST}`
+          )
+        }
       >
         <div
           className={trim(`
@@ -61,13 +91,12 @@ const BlogsHero = () => {
             w-full
             p-6
             text-white
-            bg-gradient-t-dark`)}
+            bg-gradient-t-dark
+            group-hover:text-secondary`)}
         >
-          <h3 className="text-responsive-lg">
-            {t("coName", { ns: "common" })}
-          </h3>
+          <h3 className="text-responsive-lg">{blogsHeadersArr[1].title}</h3>
           <h4 className="text-responsive-md font-thin">
-            {t("hero.subtitle", { ns: "common" })}
+            {blogsHeadersArr[1].subTitle}
           </h4>
         </div>
       </div>
@@ -88,7 +117,7 @@ const BlogsHero = () => {
           <SimpleCard
             key={i}
             {...blog}
-            className="lg:flex-row flex-col"
+            className="lg:flex-row flex-col cursor-pointer hover:bg-gray-200 text-center lg:text-start max-w-[350px] lg:max-w-full"
             imgClassName="max-w-[350px] md:max-w-[250px]"
             parentInToView={activationArr[i].active}
           />
