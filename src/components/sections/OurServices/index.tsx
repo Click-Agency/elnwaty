@@ -60,7 +60,7 @@ const OurServices = () => {
   return (
     <SectionContainer
       ref={targetRef}
-      className="bg-water-pattern bg-cover py-20"
+      className="bg-water-pattern bg-auto py-20"
       wraperClassName="items-center text-center gap-2"
     >
       <SectionHeader title={t("ourServices.title")} className="text-white" />

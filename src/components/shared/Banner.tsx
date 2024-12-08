@@ -40,7 +40,7 @@ const Banner = ({
         min-h-[200px]
         bg-no-repeat
         bg-center
-        bg-cover
+        bg-auto
         ${contact ? "bg-drops-pattern" : ""}
         ${parallax ? "bg-fixed relative" : ""}
         ${className}`}

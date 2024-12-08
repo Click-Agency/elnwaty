@@ -10,7 +10,6 @@ export default function Products() {
         jsonTransFiles={["products"]}
         className={`        
           bg-cup-water-pattern
-          bg-cover
           bg-no-repeat 
           bg-center
           h-[100vh]

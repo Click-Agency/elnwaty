@@ -27,6 +27,7 @@ const AboutHero = ({
           duration-500
           ease-in-out
           text-shadow-lg
+          bg-auto
           ${isInView ? "opacity-100" : "opacity-0"}
           ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
       />

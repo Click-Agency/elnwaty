@@ -66,9 +66,9 @@ const BlogsHero = () => {
           flex
           flex-col
           min-h-[300px]
-          bg-cover
           bg-center
           bg-full-cup-pattern
+          bg-auto
           transition-opacity
           duration-500
           ease-in-out

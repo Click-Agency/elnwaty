@@ -6,6 +6,7 @@ import { appRoutes } from "../../config";
 import { FaFacebookF, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 import useScrollInToView from "../../hooks/useScrollInToView";
+import footerImg from "/assets/imgs/bg-wave.png"
 
 const Footer = () => {
   const { t } = useTranslation(["footer", "header", "common"]);
@@ -48,7 +49,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className="flex flex-col pb-2 bg-wave-pattern bg-cover">
+    <footer className="flex flex-col pb-2 relative overflow-hidden">
+      <img className="absolute block top-0 left-0 w-full h-full min-w-[1980px] z-[-1]"  src={footerImg} alt="footer-img"/>
       <div
         className={trim(`
           flex

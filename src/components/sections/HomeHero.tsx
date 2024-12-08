@@ -16,7 +16,7 @@ const HomeHero = () => {
       ref={targetRef}
       className={`
         bg-hero-pattern 
-        bg-cover 
+        bg-auto
         bg-no-repeat
         md:bg-top 
         bg-center
