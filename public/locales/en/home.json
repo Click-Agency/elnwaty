@@ -62,6 +62,10 @@
     ]
   },
 
+  "ourProjects": {
+    "title": "Our Projects"
+  },
+
   "ourProducts": {
     "title": "Our Products",
     "items": {

@@ -8,6 +8,7 @@ import WhyChooseUs from "../components/sections/WhyChooseUs";
 import Banner from "../components/shared/Banner";
 import PageContainer from "../components/shared/containers/PageContainer";
 import Clients from "../components/sections/Clients";
+import Gallery from "../components/sections/Gallery";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         parallaxClassName="bg-blue-400/30 "
       />
       <Achievements />
+      <Gallery />
       <OurProducts showTitle />
       <Clients />
       <Testimonials />

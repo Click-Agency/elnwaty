@@ -61,6 +61,10 @@
     ]
   },
 
+  "ourProjects": {
+    "title": "مشاريعنا"
+  },
+
   "ourProducts": {
     "title": "منتجاتنا",
     "items": {
