@@ -43,7 +43,7 @@ const OurProjects = () => {
             <img
               src={image.src}
               alt="gallery"
-              className="cursor-pointer"
+              className="cursor-pointer hover:scale-105 transform transition-transform"
               onClick={() => setOpen(true)}
             />
           </li>
