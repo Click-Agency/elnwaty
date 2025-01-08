@@ -44,7 +44,8 @@ const TreatmentCard = ({
           text-responsive-2md
           text-primary
           font-bold
-          text-center`)}
+          text-center
+          md:min-w-[150px]`)}
       >
         {title}
       </h3>
