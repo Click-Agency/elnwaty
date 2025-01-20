@@ -66,21 +66,12 @@
     "title": "Our Projects"
   },
 
-  "ourProducts": {
-    "title": "Our Products",
-    "items": {
-      "descriptionOne": "Primary Preprocessing Units",
+  "ourSuppliers": {
+    "title": "Our Suppliers"
+  },
 
-      "descriptionTwo": "RO Desalination Plants",
-
-      "descriptionThree": "Water Sterilization and Disinfection Systems",
-
-      "descriptionFour": "Softeners",
-
-      "descriptionFive": "Production and Packing Lines",
-
-      "descriptionSix": "Swimming Pool Maintenance and Installation"
-    }
+  "ourClients": {
+    "title": "Our Clients"
   },
 
   "testimonials": {

@@ -2,14 +2,17 @@ import { useTranslation } from "react-i18next";
 import SectionContainer from "../../shared/containers/SectionContainer";
 import SectionHeader from "../../shared/SectionHeader";
 import Background from "./Background";
-import testimonialsOne from "../../../assets/imgs/testimonials-1.png";
-import testimonialsTwo from "../../../assets/imgs/testimonials-2.png";
-import testimonialsThree from "../../../assets/imgs/testimonials-3.png";
 import TestimonialCard from "./TestimonialCard";
 import useScrollInToView from "../../../hooks/useScrollInToView";
 import useActivation from "../../../hooks/useActivation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+
+import testimonialsOne from "../../../assets/imgs/testimonials/testimonial_1.png";
+import testimonialsTwo from "../../../assets/imgs/testimonials/testimonial_2.png";
+import testimonialsThree from "../../../assets/imgs/testimonials/testimonial_3.png";
+import testimonialsFour from "../../../assets/imgs/testimonials/testimonial_4.png";
+import testimonialsFive from "../../../assets/imgs/testimonials/testimonial_5.png";
 
 const Testimonials = () => {
   const { t } = useTranslation(["home"]);
@@ -32,12 +35,12 @@ const Testimonials = () => {
       feedback: t("testimonials.items.cardThree.feedback"),
     },
     {
-      img: testimonialsThree,
+      img: testimonialsFour,
       name: t("testimonials.items.cardThree.name"),
       feedback: t("testimonials.items.cardThree.feedback"),
     },
     {
-      img: testimonialsThree,
+      img: testimonialsFive,
       name: t("testimonials.items.cardThree.name"),
       feedback: t("testimonials.items.cardThree.feedback"),
     },

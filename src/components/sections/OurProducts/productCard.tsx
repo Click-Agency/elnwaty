@@ -26,6 +26,7 @@ const ProductCard = ({
         border-2
         shadow-lg
         rounded-xl
+        w-full
         max-w-[350px]
         transition-opacity
         duration-500
@@ -33,7 +34,7 @@ const ProductCard = ({
         ${isInView && parentInToView ? "opacity-100" : "opacity-0"}
         ${className}`)}
     >
-      <img src={img} alt="product" />
+      <img src={img} alt="product" className=" max-h-[150px]" />
 
       <p
         className={trim(`

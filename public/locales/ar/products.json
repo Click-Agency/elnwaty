@@ -1,3 +1,67 @@
 {
-  "title": "منتجاتنا"
+  "title": "منتجاتنا",
+
+  "categories": [
+    {
+      "title": "To Membranes and on-line Meters",
+      "items": ["Filter Containers", "TDS-230 TDS Monitor"]
+    },
+
+    {
+      "title": "FILTER HOUINGS",
+      "items": [
+        "FC-1",
+        "FC-6",
+        "FC-9 DOE",
+        "FC-18 ceramic",
+        "FC-25",
+        "FC-28",
+        "FC-29",
+        "FC-35 2.0x10",
+        "FC-53",
+        "FC-55",
+        "FC-54",
+        "FC-57",
+        "FH-8",
+        "FH-18",
+        "FH-39 20BB dual 0-ring",
+        "FH-35"
+      ]
+    },
+
+    { "title": "FRP Tanks", "items": ["Tanks"] },
+
+    { "title": "Water Distributors", "items": ["Brine Tank", "Venture"] },
+
+    { "title": "Flow Meters", "items": ["LZT", "Tube type flow meter"] },
+
+    {
+      "title": "Solenoid Valves and Pressure gauges",
+      "items": [
+        "DFD-25",
+        "PG-2/60mm O/D with oil SS304 casing",
+        "PG-4/100mm O/D with oil SS304 casing"
+      ]
+    },
+
+    {
+      "title": "Stalnless sterling and filtration housings",
+      "items": [
+        "UPVC Cartridge Filter 9 Series 10/20/30/40",
+        "UPVC Cartridge Filter 5 Series 10/20/30/40",
+        "UPVC Cartridge Bag Filter Series type - I/II",
+        "UPVC Cartridge Filter 5 Series 10/20/30/40"
+      ]
+    },
+
+    {
+      "title": "Accessories",
+      "items": ["DT-01 1/4x1/4"]
+    },
+
+    {
+      "title": "Faucets",
+      "items": ["D-05-1"]
+    }
+  ]
 }

@@ -65,21 +65,12 @@
     "title": "مشاريعنا"
   },
 
-  "ourProducts": {
-    "title": "منتجاتنا",
-    "items": {
-      "descriptionOne": "وحدات المعالجة الأولية",
+  "ourSuppliers": {
+    "title": "موردينا"
+  },
 
-      "descriptionTwo": "محطات تحلية المياه بتقنية التناضح العكسي",
-
-      "descriptionThree": "أنظمة تعقيم وتطهير المياه",
-
-      "descriptionFour": "أجهزة التعقيم",
-
-      "descriptionFive": "خطوط إنتاج وتعبئة المياه",
-
-      "descriptionSix": "صيانة وتركيب حمامات السباحة"
-    }
+  "ourClients": {
+    "title": "عملاؤنا"
   },
 
   "testimonials": {
