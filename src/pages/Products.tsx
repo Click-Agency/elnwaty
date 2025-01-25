@@ -4,6 +4,7 @@ import Banner from "../components/shared/Banner";
 import PageContainer from "../components/shared/containers/PageContainer";
 import PageHero from "../components/shared/PageHero";
 import { Category } from "../types/products";
+import { IoMdCloudDownload } from "react-icons/io";
 
 // product imgs
 import tanks from "../assets/imgs/products/tanks.png";
@@ -30,6 +31,15 @@ import upvcBag from "../assets/imgs/products/upvc-bag.png";
 import upvc5xl from "../assets/imgs/products/upvc-5-xl.png";
 import dt01 from "../assets/imgs/products/dt-01.png";
 import d05 from "../assets/imgs/products/d05.png";
+import FC53 from "../assets/imgs/products/fc-53.png";
+import FC55 from "../assets/imgs/products/fc-55.png";
+import FC54 from "../assets/imgs/products/fc-54.png";
+import FC57 from "../assets/imgs/products/fc-57.png";
+import brineTank from "../assets/imgs/products/brine-tank.png";
+import venture from "../assets/imgs/products/venture.png";
+import flowmeter from "../assets/imgs/products/flow-meter.png";
+import lzt from "../assets/imgs/products/lzt.png";
+import ButtonStyled from "../components/shared/ButtonStyled";
 
 const imgsArr = [
   containers,
@@ -42,19 +52,19 @@ const imgsArr = [
   FC28,
   FC29,
   FC35,
-  "",
-  "",
-  "",
-  "",
+  FC53,
+  FC55,
+  FC54,
+  FC57,
   FH8,
   FH18,
   FH39,
   FH35,
   tanks,
-  "",
-  "",
-  "",
-  "",
+  { img: brineTank, link: "/products/brine-tank" },
+  { img: venture, link: "/products/brine-tank" },
+  { img: lzt, link: "/products/brine-tank" },
+  { img: flowmeter, link: "/products/brine-tank" },
   dfd25,
   pg26,
   pg4100,
@@ -66,14 +76,18 @@ const imgsArr = [
   d05,
 ];
 
-const getProductsArr = (categoriesArr: Category[], imgs: string[]) => {
+const getProductsArr = (
+  categoriesArr: Category[],
+  imgs: (string | { img: string; link: string })[]
+) => {
   let totalIndex = 0;
   return Array.from({ length: categoriesArr.length }, (_, i) => {
     return categoriesArr[i].items.map((item) => {
-      const img = imgs[totalIndex] ?? "";
+      const imgRef = imgs[totalIndex];
       totalIndex++;
       return {
-        img,
+        img: typeof imgRef === "string" ? imgRef : imgRef.img,
+        link: typeof imgRef === "string" ? undefined : imgRef.link,
         description: item,
       };
     });
@@ -99,7 +113,17 @@ export default function Products() {
           bg-center
           h-[100vh]
           justify-center`}
-      />
+      >
+        <ButtonStyled
+          title={t("download")}
+          border
+          hover
+          bg
+          SvgIcon={<IoMdCloudDownload size={40} />}
+          className="m-auto rounded-md mt-2"
+          IconRight
+        />
+      </PageHero>
 
       {categoriesArr.map(({ title }, i) => (
         <OurProducts key={i} title={title} productsArr={productsArr[i]} />

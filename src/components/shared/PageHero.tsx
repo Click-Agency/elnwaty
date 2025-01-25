@@ -18,18 +18,22 @@ const AboutHero = ({
   const { targetRef, isInView } = useScrollInToView();
 
   return (
-    <SectionContainer ref={targetRef} className={trim(className)}>
+    <SectionContainer
+      ref={targetRef}
+      className={trim(className)}
+      wraperClassName={`
+        transition-[transform, opacity]
+        duration-500
+        ease-in-out
+        ${isInView ? "opacity-100" : "opacity-0"}
+        ${isInView ? "translate-y-0" : "translate-y-1/2"}`}
+    >
       <SectionHeader
         title={t("title")}
         className={trim(`
           !text-responsive-cover
-          transition-[transform, opacity]
-          duration-500
-          ease-in-out
           text-shadow-lg
-          bg-auto
-          ${isInView ? "opacity-100" : "opacity-0"}
-          ${isInView ? "translate-y-0" : "translate-y-1/2"}`)}
+          bg-auto`)}
       />
       {children}
     </SectionContainer>

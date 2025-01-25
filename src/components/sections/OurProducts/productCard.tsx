@@ -1,18 +1,24 @@
+import { useTranslation } from "react-i18next";
 import useScrollInToView from "../../../hooks/useScrollInToView";
 import { trim } from "../../../utils/functions/general";
+import ButtonStyled from "../../shared/ButtonStyled";
+import { IoMdCloudDownload } from "react-icons/io";
 
 const ProductCard = ({
   className = "",
   img,
   description,
+  link,
   parentInToView,
 }: {
   className?: string;
+  link?: string;
   img: string;
   description: string;
   parentInToView: boolean;
 }) => {
   const { targetRef, isInView } = useScrollInToView();
+  const { t } = useTranslation(["common"]);
   return (
     <div
       ref={targetRef}
@@ -45,6 +51,18 @@ const ProductCard = ({
       >
         {description}
       </p>
+
+      {link && (
+        <ButtonStyled
+          title={t("downloadDetails")}
+          href={link}
+          border
+          size="sm"
+          hover
+          bg
+          SvgIcon={<IoMdCloudDownload size={25} />}
+        />
+      )}
     </div>
   );
 };

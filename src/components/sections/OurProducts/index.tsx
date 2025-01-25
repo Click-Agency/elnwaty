@@ -9,7 +9,7 @@ const OurProducts = ({
   productsArr,
   title,
 }: {
-  productsArr: { img: string; description: string }[];
+  productsArr: { img: string; description: string; link?: string }[];
   title?: string;
 }) => {
   const { targetRef, isInView } = useScrollInToView();

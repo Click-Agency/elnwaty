@@ -12,4 +12,11 @@ const appRoutes = {
   contact: "/contact",
 };
 
-export { appRoutes };
+const info = {
+  email: "",
+  products: {
+    catalog: "",
+  },
+};
+
+export { appRoutes, info };
