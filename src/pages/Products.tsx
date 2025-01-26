@@ -5,6 +5,7 @@ import PageContainer from "../components/shared/containers/PageContainer";
 import PageHero from "../components/shared/PageHero";
 import { Category } from "../types/products";
 import { IoMdCloudDownload } from "react-icons/io";
+import { info } from "../config";
 
 // product imgs
 import tanks from "../assets/imgs/products/tanks.png";
@@ -61,10 +62,10 @@ const imgsArr = [
   FH39,
   FH35,
   tanks,
-  { img: brineTank, link: "/products/brine-tank" },
-  { img: venture, link: "/products/brine-tank" },
-  { img: lzt, link: "/products/brine-tank" },
-  { img: flowmeter, link: "/products/brine-tank" },
+  { img: brineTank, link: info.products.brine },
+  { img: venture, link: info.products.venture },
+  { img: lzt, link: info.products.lzt },
+  { img: flowmeter, link: info.products.tubes },
   dfd25,
   pg26,
   pg4100,
@@ -114,15 +115,22 @@ export default function Products() {
           h-[100vh]
           justify-center`}
       >
-        <ButtonStyled
-          title={t("download")}
-          border
-          hover
-          bg
-          SvgIcon={<IoMdCloudDownload size={40} />}
-          className="m-auto rounded-md mt-2"
-          IconRight
-        />
+        <a
+          href={info.products.catalog}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="m-auto"
+        >
+          <ButtonStyled
+            title={t("download")}
+            border
+            hover
+            bg
+            SvgIcon={<IoMdCloudDownload size={40} />}
+            className="rounded-md mt-2"
+            IconRight
+          />
+        </a>
       </PageHero>
 
       {categoriesArr.map(({ title }, i) => (

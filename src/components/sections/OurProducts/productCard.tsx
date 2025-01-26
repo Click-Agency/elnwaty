@@ -53,15 +53,16 @@ const ProductCard = ({
       </p>
 
       {link && (
-        <ButtonStyled
-          title={t("downloadDetails")}
-          href={link}
-          border
-          size="sm"
-          hover
-          bg
-          SvgIcon={<IoMdCloudDownload size={25} />}
-        />
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <ButtonStyled
+            title={t("downloadDetails")}
+            border
+            size="sm"
+            hover
+            bg
+            SvgIcon={<IoMdCloudDownload size={25} />}
+          />
+        </a>
       )}
     </div>
   );

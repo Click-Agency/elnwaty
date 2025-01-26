@@ -1,3 +1,9 @@
+import lztPdf from "../assets/pdf/lzt.pdf";
+import catalogPdf from "../assets/pdf/dar-alnawati-catalog.pdf";
+import brinePdf from "../assets/pdf/brine.pdf";
+import tubesPdf from "../assets/pdf/tubes.pdf";
+import venturePdf from "../assets/pdf/venture.pdf";
+
 const appRoutes = {
   home: "/",
   about: "/about-us",
@@ -15,7 +21,11 @@ const appRoutes = {
 const info = {
   email: "",
   products: {
-    catalog: "",
+    catalog: catalogPdf,
+    lzt: lztPdf,
+    brine: brinePdf,
+    tubes: tubesPdf,
+    venture: venturePdf,
   },
 };
 
