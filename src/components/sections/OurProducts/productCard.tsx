@@ -15,7 +15,7 @@ const ProductCard = ({
   link?: string;
   img: string;
   description: string;
-  parentInToView: boolean;
+  parentInToView?: boolean;
 }) => {
   const { targetRef, isInView } = useScrollInToView();
   const { t } = useTranslation(["common"]);

@@ -1,8 +1,8 @@
 import SectionContainer from "../../shared/containers/SectionContainer";
 import SectionHeader from "../../shared/SectionHeader";
 import { trim } from "../../../utils/functions/general";
-import useScrollInToView from "../../../hooks/useScrollInToView";
-import useActivation from "../../../hooks/useActivation";
+// import useScrollInToView from "../../../hooks/useScrollInToView";
+// import useActivation from "../../../hooks/useActivation";
 import ProductCard from "./productCard";
 
 const OurProducts = ({
@@ -12,14 +12,14 @@ const OurProducts = ({
   productsArr: { img: string; description: string; link?: string }[];
   title?: string;
 }) => {
-  const { targetRef, isInView } = useScrollInToView();
+  // const { targetRef, isInView } = useScrollInToView();
 
-  const { activationArr } = useActivation(productsArr.length, 300, {
-    initializtion: isInView,
-  });
+  // const { activationArr } = useActivation(productsArr.length, 300, {
+  //   initializtion: isInView,
+  // });
 
   return (
-    <SectionContainer ref={targetRef}>
+    <SectionContainer>
       {title && <SectionHeader title={title} />}
 
       <div
@@ -34,11 +34,7 @@ const OurProducts = ({
           mt-7`)}
       >
         {productsArr.map((product, i) => (
-          <ProductCard
-            key={i}
-            {...product}
-            parentInToView={activationArr[i].active}
-          />
+          <ProductCard key={i} {...product} parentInToView={true} />
         ))}
       </div>
     </SectionContainer>

@@ -6,6 +6,7 @@ import PageHero from "../components/shared/PageHero";
 import { Category } from "../types/products";
 import { IoMdCloudDownload } from "react-icons/io";
 import { info } from "../config";
+import ButtonStyled from "../components/shared/ButtonStyled";
 
 // product imgs
 import tanks from "../assets/imgs/products/tanks.png";
@@ -40,7 +41,27 @@ import brineTank from "../assets/imgs/products/brine-tank.png";
 import venture from "../assets/imgs/products/venture.png";
 import flowmeter from "../assets/imgs/products/flow-meter.png";
 import lzt from "../assets/imgs/products/lzt.png";
-import ButtonStyled from "../components/shared/ButtonStyled";
+import btSuper from "../assets/imgs/products/bt-super.png";
+import zenClear from "../assets/imgs/products/zen-clear.png";
+import sodumHypo from "../assets/imgs/products/sodium-hypo.png";
+import hydroCloric from "../assets/imgs/products/hydro-cloric.png";
+import brekoSafe from "../assets/imgs/products/breko-safe.png";
+import hydrex from "../assets/imgs/products/hydrex.png";
+import blueGallon from "../assets/imgs/products/blue-gallon.png";
+import hypersperse from "../assets/imgs/products/hypersperse.png";
+import flocon from "../assets/imgs/products/flocon.png";
+import aquafit from "../assets/imgs/products/aquafit.png";
+import hth from "../assets/imgs/products/hth.png";
+import sulphuricAcid from "../assets/imgs/products/sulphuric-acid.png";
+import sodiumHdroxide from "../assets/imgs/products/sodium-hydroxide.png";
+import bitterSalz from "../assets/imgs/products/bitter-salz.png";
+import natriumpyrosulfit from "../assets/imgs/products/natriumpyrosulfit.png";
+import birlasulfSm from "../assets/imgs/products/birlasulf-sm.png";
+import waterSoftener from "../assets/imgs/products/water-softener.png";
+import tetra from "../assets/imgs/products/tetra.png";
+import sodioMeta from "../assets/imgs/products/sodio-meta.png";
+import trichloAcid from "../assets/imgs/products/trichlo-acid.png";
+import csHac from "../assets/imgs/products/cs-hac.png";
 
 const imgsArr = [
   containers,
@@ -75,6 +96,38 @@ const imgsArr = [
   upvc5xl,
   dt01,
   d05,
+  btSuper,
+  zenClear,
+  blueGallon,
+  blueGallon,
+  sodumHypo,
+  hydroCloric,
+  brekoSafe,
+  brekoSafe,
+  brekoSafe,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  hydrex,
+  hydrex,
+  hydrex,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  hypersperse,
+  flocon,
+  aquafit,
+  hth,
+  sulphuricAcid,
+  sodiumHdroxide,
+  bitterSalz,
+  natriumpyrosulfit,
+  birlasulfSm,
+  waterSoftener,
+  tetra,
+  sodioMeta,
+  trichloAcid,
+  csHac,
 ];
 
 const getProductsArr = (

@@ -64,6 +64,44 @@
     {
       "title": "Faucets",
       "items": ["D-05-1"]
+    },
+
+    {
+      "title": "Clarifiers",
+      "items": [
+        "BT Super",
+        "ZenClear All in One",
+        "Ecocide Algae Control",
+        "CO Clear",
+        "Sodium Hypochlorite 10%-12%",
+        "Hydrocloric Acid 30%",
+        "Berko Safe 107",
+        "Berko Safe 106",
+        "Berko Safe SW",
+        "ATC-BT 33",
+        "ATC-BT 25",
+        "ATC-0C200",
+        "Hydrex 3140",
+        "Hydrex 2510S",
+        "Hydrex 4105",
+        "Permatreat PC-504T",
+        "Permatreat PC-510T",
+        "Permatreat PC-191T",
+        "Hypersperse MDC704I",
+        "Flocon® 260",
+        "Aquafit Premium Grade",
+        "hth Granular",
+        "Sulphuric Acid 98%",
+        "Sodium Hydroxide 50%",
+        "Bitter Salz",
+        "Natriumpyrosulfit",
+        "Birlasulf-SM",
+        "Water Softener",
+        "Tetra Calcium Chloride",
+        "Sodio Metabisulfito",
+        "Trichloroisocyanuric Acid 90%",
+        "CS-HAC"
+      ]
     }
   ]
 }
