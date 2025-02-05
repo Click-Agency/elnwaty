@@ -5,12 +5,12 @@
 
   "categories": [
     {
-      "title": "To Membranes and on-line Meters",
+      "title": "إلى الأغشية والعدادات عبر الإنترنت",
       "items": ["Filter Containers", "TDS-230 TDS Monitor"]
     },
 
     {
-      "title": "FILTER HOUINGS",
+      "title": "مساكن الفلاتر",
       "items": [
         "FC-1",
         "FC-6",
@@ -31,14 +31,14 @@
       ]
     },
 
-    { "title": "FRP Tanks", "items": ["Tanks"] },
+    { "title": "خزانات FRP", "items": ["Tanks"] },
 
-    { "title": "Water Distributors", "items": ["Brine Tank", "Venture"] },
+    { "title": "موزعات المياه", "items": ["Brine Tank", "Venture"] },
 
-    { "title": "Flow Meters", "items": ["LZT", "Tube type flow meter"] },
+    { "title": "عدادات التدفق", "items": ["LZT", "Tube type flow meter"] },
 
     {
-      "title": "Solenoid Valves and Pressure gauges",
+      "title": "صمامات الملف اللولبي ومقاييس الضغط",
       "items": [
         "DFD-25",
         "PG-2/60mm O/D with oil SS304 casing",
@@ -47,7 +47,7 @@
     },
 
     {
-      "title": "Stalnless sterling and filtration housings",
+      "title": "مساكن الفلاتر والفلاتر المصنوعة من الفولاذ المقاوم للصدأ",
       "items": [
         "UPVC Cartridge Filter 9 Series 10/20/30/40",
         "UPVC Cartridge Filter 5 Series 10/20/30/40",
@@ -57,17 +57,17 @@
     },
 
     {
-      "title": "Accessories",
+      "title": "ملحقات",
       "items": ["DT-01 1/4x1/4"]
     },
 
     {
-      "title": "Faucets",
+      "title": "صنابير",
       "items": ["D-05-1"]
     },
 
     {
-      "title": "Clarifiers",
+      "title": "مصفاة",
       "items": [
         "BT Super",
         "ZenClear All in One",
