@@ -43,16 +43,16 @@ import flowmeter from "../assets/imgs/products/flow-meter.png";
 import lzt from "../assets/imgs/products/lzt.png";
 import btSuper from "../assets/imgs/products/bt-super.png";
 import zenClear from "../assets/imgs/products/zen-clear.png";
-import sodumHypo from "../assets/imgs/products/sodium-hypo.png";
-import hydroCloric from "../assets/imgs/products/hydro-cloric.png";
-import brekoSafe from "../assets/imgs/products/breko-safe.png";
-import hydrex from "../assets/imgs/products/hydrex.png";
+// import sodumHypo from "../assets/imgs/products/sodium-hypo.png";
+// import hydroCloric from "../assets/imgs/products/hydro-cloric.png";
+// import brekoSafe from "../assets/imgs/products/breko-safe.png";
+// import hydrex from "../assets/imgs/products/hydrex.png";
+// import hypersperse from "../assets/imgs/products/hypersperse.png";
+// import sulphuricAcid from "../assets/imgs/products/sulphuric-acid.png";
+// import flocon from "../assets/imgs/products/flocon.png";
 import blueGallon from "../assets/imgs/products/blue-gallon.png";
-import hypersperse from "../assets/imgs/products/hypersperse.png";
-import flocon from "../assets/imgs/products/flocon.png";
-import aquafit from "../assets/imgs/products/aquafit.png";
 import hth from "../assets/imgs/products/hth.png";
-import sulphuricAcid from "../assets/imgs/products/sulphuric-acid.png";
+import aquafit from "../assets/imgs/products/aquafit.png";
 import sodiumHdroxide from "../assets/imgs/products/sodium-hydroxide.png";
 import bitterSalz from "../assets/imgs/products/bitter-salz.png";
 import natriumpyrosulfit from "../assets/imgs/products/natriumpyrosulfit.png";
@@ -62,6 +62,8 @@ import tetra from "../assets/imgs/products/tetra.png";
 import sodioMeta from "../assets/imgs/products/sodio-meta.png";
 import trichloAcid from "../assets/imgs/products/trichlo-acid.png";
 import csHac from "../assets/imgs/products/cs-hac.png";
+import blackGallon from "../assets/imgs/products/black-gallon.png";
+import yellowGallon from "../assets/imgs/products/yellow-gallon.png";
 
 const imgsArr = [
   containers,
@@ -100,25 +102,25 @@ const imgsArr = [
   zenClear,
   blueGallon,
   blueGallon,
-  sodumHypo,
-  hydroCloric,
-  brekoSafe,
-  brekoSafe,
-  brekoSafe,
+  blackGallon,
+  yellowGallon,
   blueGallon,
   blueGallon,
   blueGallon,
-  hydrex,
-  hydrex,
-  hydrex,
   blueGallon,
   blueGallon,
   blueGallon,
-  hypersperse,
-  flocon,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  blueGallon,
+  blueGallon,
   aquafit,
   hth,
-  sulphuricAcid,
+  blueGallon,
   sodiumHdroxide,
   bitterSalz,
   natriumpyrosulfit,
