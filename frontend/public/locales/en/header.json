@@ -1,0 +1,14 @@
+{
+  "title": "header",
+
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "treatments": "Treatments Systems",
+    "blogs": "Blogs",
+    "partners": "Partners",
+    "contact": "Contact",
+    "lang": "العربية"
+  }
+}
