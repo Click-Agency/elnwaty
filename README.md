@@ -1,4 +1,4 @@
-<h1 align="center">Dar-ElNwaty</h1>
+<h1 align="center">Dar AL-NAWATI</h1>
 
 #### [!CAUTION] You need to add the necessary environment variables to backend and frontend
 

@@ -1,8 +1,8 @@
 {
-  "name": "@dar-elnwaty/backend",
+  "name": "@dar-al-nwati/backend",
   "private": true,
   "version": "1.0.0",
-  "description": "dar-elnwaty backend",
+  "description": "dar-al-nwati backend",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Click-Agency/elnwaty.git"
   },
   "keywords": [
-    "dar-elnwaty",
+    "dar-al-nwati",
     "backend"
   ],
   "author": "Ahmed Ehab",
@@ -38,6 +38,7 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemailer": "^6.10.0",
-    "xlsx": "^0.18.5"
+    "xlsx": "^0.18.5",
+    "zod": "^3.24.2"
   }
 }

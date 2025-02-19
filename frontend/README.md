@@ -1,4 +1,4 @@
-<h1 align="center">Dar-ElNwaty - frontend</h1>
+<h1 align="center">Dar AL-NAWATI - frontend</h1>
 
 ### Installation
 
