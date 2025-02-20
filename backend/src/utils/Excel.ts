@@ -19,8 +19,8 @@ class Excel {
 
   private _config = {
     savepath: "../../xlsx",
-    sheetname: "From Contact",
-    filename: "contact",
+    sheetname: "contact sheet",
+    filename: "dar al-nawati contact list",
     extension: "xlsx",
   };
 
