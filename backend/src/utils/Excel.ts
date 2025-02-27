@@ -8,7 +8,7 @@ import {
   WritingOptions,
 } from "xlsx";
 import { join } from "path";
-import { existsSync } from "fs";
+import { existsSync, mkdirSync } from "fs";
 import Contact from "../types/Contact";
 
 class Excel {
@@ -31,11 +31,18 @@ class Excel {
 
   public constructor({ config }: { config?: Excel["_config"] } = {}) {
     if (config) this._config = { ...this._config, ...config };
+
+    this.checkForFolder();
   }
 
   public static getInstance() {
     if (!Excel.instance) Excel.instance = new Excel();
     return Excel.instance;
+  }
+
+  private checkForFolder() {
+    if (!existsSync(join(__dirname, this._config.savepath)))
+      mkdirSync(join(__dirname, this._config.savepath));
   }
 
   public checkForPrevData(): Excel {
