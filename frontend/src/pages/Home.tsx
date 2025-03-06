@@ -1,7 +1,7 @@
 import Achievements from "../components/sections/Achievements";
 import HomeHero from "../components/sections/HomeHero";
 import OurServices from "../components/sections/OurServices";
-import Testimonials from "../components/sections/Testimonials";
+// import Testimonials from "../components/sections/Testimonials";
 import WelcomeBanner from "../components/sections/WelcomeBanner";
 import WhyChooseUs from "../components/sections/WhyChooseUs";
 import Banner from "../components/shared/Banner";
@@ -93,7 +93,7 @@ export default function Home() {
         cardClassName="max-w-72"
       />
       <Carousel title={t("ourClients.title")} items={clientsArr} />
-      <Testimonials />
+      {/* <Testimonials /> */}
     </PageContainer>
   );
 }
