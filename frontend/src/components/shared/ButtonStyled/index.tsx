@@ -39,6 +39,7 @@ interface ButtonStyledProps
   warning?: boolean;
   danger?: boolean;
   children?: ReactNode;
+  nativeAnchor?: boolean;
   onClick?: MouseEventHandler<HTMLButtonElement | HTMLAnchorElement>;
 }
 
@@ -67,6 +68,7 @@ const ButtonStyled = forwardRef(
       success,
       warning,
       danger,
+      nativeAnchor = false,
       onClick,
       ...attributes
     }: ButtonStyledProps,
@@ -141,6 +143,22 @@ const ButtonStyled = forwardRef(
         {children}
         {IconRight && SvgIcon}
       </button>
+    ) : nativeAnchor ? (
+      <a
+        ref={refHandler as ForwardedRef<HTMLAnchorElement>}
+        href={href || "/"}
+        onClick={onClickHandler}
+        target={target}
+        className={classes}
+        style={style}
+        {...attributes}
+      >
+        {animatedBorder && animatedElement}
+        {!IconRight && SvgIcon}
+        {title}
+        {children}
+        {IconRight && SvgIcon}
+      </a>
     ) : (
       <Link
         ref={refHandler as ForwardedRef<HTMLAnchorElement>}

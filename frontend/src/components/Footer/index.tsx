@@ -4,14 +4,11 @@ import Logo from "../shared/Logo";
 import ButtonStyled from "../shared/ButtonStyled";
 import { appRoutes, info } from "../../config";
 import { FaFacebookF, FaWhatsapp, FaInstagram } from "react-icons/fa";
-import { useLocation, useNavigate } from "react-router-dom";
 import useScrollInToView from "../../hooks/useScrollInToView";
 import footerImg from "/assets/imgs/bg-wave.png";
 
 const Footer = () => {
   const { t } = useTranslation(["footer", "header", "common"]);
-  const push = useNavigate();
-  const { pathname } = useLocation();
 
   const { targetRef, isInView } = useScrollInToView();
 
@@ -42,11 +39,6 @@ const Footer = () => {
       ],
     },
   ];
-
-  const onClickHandler = (link: string) => {
-    if (pathname !== link) push(link);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   return (
     <footer className="flex flex-col pb-2 relative overflow-hidden">
@@ -129,7 +121,7 @@ const Footer = () => {
                 {links.map((link, i) => (
                   <li key={i}>
                     <ButtonStyled
-                      onClick={() => onClickHandler(link.link)}
+                      href={link.link}
                       size="custom"
                       title={"name" in link ? link.name : undefined}
                       className={`
@@ -147,6 +139,8 @@ const Footer = () => {
                           : ""
                       }`}
                       SvgIcon={"icon" in link ? link.icon : undefined}
+                      nativeAnchor
+                      target="_blank"
                     />
                   </li>
                 ))}

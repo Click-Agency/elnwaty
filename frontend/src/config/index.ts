@@ -26,7 +26,7 @@ const info = {
   email: "",
   phone: "12",
   whatsapp: "",
-  facebook: "",
+  facebook: "https://www.facebook.com/",
   instagram: "",
   location: {
     en: "Saudi Arabia, Jeddah",
