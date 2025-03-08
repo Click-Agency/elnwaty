@@ -115,6 +115,7 @@ const Drawer = ({
                 onClick={() => onNavHandler(link)}
                 className={trim(`
                   !text-primary
+                  hover:!text-secondary
                   font-medium
                   ${
                     activePath === link
@@ -124,7 +125,6 @@ const Drawer = ({
                   }`)}
                 size="md"
                 title={name}
-                animatedUnderline={activePath !== link}
               />
             </li>
           ))}

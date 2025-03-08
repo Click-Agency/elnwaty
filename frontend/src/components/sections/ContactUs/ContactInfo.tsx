@@ -3,24 +3,25 @@ import { trim } from "../../../utils/functions/general";
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import ButtonStyled from "../../shared/ButtonStyled";
+import { info } from "../../../config";
 
 const ContactInfo = () => {
-  const { t } = useTranslation(["contact"]);
+  const { t, i18n } = useTranslation(["contact"]);
 
   const contactInfoArr = [
     {
       icon: <FaPhone className="text-white" />,
       text: t("info.phone"),
-      href: "tel:+20123456789",
+      href: `tel:${info.phone}`,
     },
     {
       icon: <MdEmail className="text-white" />,
       text: t("info.email"),
-      href: "mailto:",
+      href: `mailto:${info.email}`,
     },
     {
       icon: <FaLocationDot className="text-white" />,
-      text: t("info.address"),
+      text: i18n.language === "ar" ? info.location.ar : info.location.en,
       href: undefined,
     },
   ];
@@ -63,7 +64,8 @@ const ContactInfo = () => {
           <ButtonStyled
             className={`
               w-fit
-              hover:text-green-500`}
+              ${!href ? "cursor-auto" : ""}
+              ${href ? "hover:text-green-500" : ""}`}
             key={i}
             title={text}
             href={href}

@@ -24,6 +24,14 @@ const apiRoutes = {
 
 const info = {
   email: "",
+  phone: "12",
+  whatsapp: "",
+  facebook: "",
+  instagram: "",
+  location: {
+    en: "Saudi Arabia, Jeddah",
+    ar: "المملكة العربية السعودية، جدة",
+  },
   products: {
     catalog: catalogPdf,
     lzt: lztPdf,

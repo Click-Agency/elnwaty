@@ -1,23 +1,24 @@
 import { useTranslation } from "react-i18next";
 import ButtonStyled from "./ButtonStyled";
-import { FaPhoneAlt , FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { trim } from "../../utils/functions/general";
+import { info } from "../../config";
 
 const FloatingButtons = () => {
   const { i18n } = useTranslation();
 
   const btnsArr = [
     {
-      icon: <FaPhoneAlt  className="md:w-7 md:h-7 w-6 h-6" />,
+      icon: <FaPhoneAlt className="md:w-7 md:h-7 w-6 h-6" />,
       color: "bg-blue-500",
       hoverColor: "hover:bg-blue-700",
-      href: "",
+      href: `tel:${info.phone}`,
     },
     {
       icon: <FaWhatsapp className="md:w-7 md:h-7 w-6 h-6" />,
       color: "bg-green-500",
       hoverColor: "hover:bg-green-700",
-      href: "",
+      href: info.whatsapp,
     },
   ];
 
@@ -33,7 +34,7 @@ const FloatingButtons = () => {
         z-[9]
         ${i18n.dir() === "ltr" ? " right-5" : " left-5"}`)}
     >
-      {btnsArr.map(({ color, hoverColor, icon }, i) => (
+      {btnsArr.map(({ color, hoverColor, icon, href }, i) => (
         <ButtonStyled
           key={i}
           className={trim(`
@@ -45,6 +46,7 @@ const FloatingButtons = () => {
             p-2.5
             hover:scale-110
             active:scale-95`)}
+          href={href}
           SvgIcon={icon}
         />
       ))}

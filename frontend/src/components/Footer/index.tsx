@@ -2,11 +2,11 @@ import { useTranslation } from "react-i18next";
 import { trim } from "../../utils/functions/general";
 import Logo from "../shared/Logo";
 import ButtonStyled from "../shared/ButtonStyled";
-import { appRoutes } from "../../config";
+import { appRoutes, info } from "../../config";
 import { FaFacebookF, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router-dom";
 import useScrollInToView from "../../hooks/useScrollInToView";
-import footerImg from "/assets/imgs/bg-wave.png"
+import footerImg from "/assets/imgs/bg-wave.png";
 
 const Footer = () => {
   const { t } = useTranslation(["footer", "header", "common"]);
@@ -36,9 +36,9 @@ const Footer = () => {
     {
       title: t("columns.titleTwo"),
       links: [
-        { icon: <FaFacebookF size={30} />, link: "/" },
-        { icon: <FaWhatsapp size={30} />, link: "/" },
-        { icon: <FaInstagram size={30} />, link: "/" },
+        { icon: <FaFacebookF size={30} />, link: info.facebook },
+        { icon: <FaWhatsapp size={30} />, link: info.whatsapp },
+        { icon: <FaInstagram size={30} />, link: info.instagram },
       ],
     },
   ];
@@ -50,7 +50,11 @@ const Footer = () => {
 
   return (
     <footer className="flex flex-col pb-2 relative overflow-hidden">
-      <img className="absolute block top-0 left-0 w-full h-full min-w-[1980px] z-[-1]"  src={footerImg} alt="footer-img"/>
+      <img
+        className="absolute block top-0 left-0 w-full h-full min-w-[1980px] z-[-1]"
+        src={footerImg}
+        alt="footer-img"
+      />
       <div
         className={trim(`
           flex
