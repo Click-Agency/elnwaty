@@ -47,6 +47,7 @@ const FloatingButtons = () => {
             hover:scale-110
             active:scale-95`)}
           href={href}
+          target={`${href.includes("tel") ? "_self" : "_blank"}`}
           SvgIcon={icon}
         />
       ))}

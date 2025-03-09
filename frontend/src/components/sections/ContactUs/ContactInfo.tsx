@@ -22,7 +22,7 @@ const ContactInfo = () => {
     {
       icon: <FaLocationDot className="text-white" />,
       text: i18n.language === "ar" ? info.location.ar : info.location.en,
-      href: undefined,
+      href: info.location.maps,
     },
   ];
 

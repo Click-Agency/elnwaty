@@ -24,13 +24,14 @@ const apiRoutes = {
 
 const info = {
   email: "",
-  phone: "12",
-  whatsapp: "",
-  facebook: "https://www.facebook.com/",
-  instagram: "",
+  phone: "+966 56 537 1008",
+  whatsapp: "https://wa.me/966565371008",
+  facebook: "https://www.facebook.com/share/18sBvtJURJ/?mibextid=wwXIfr",
+  instagram: "https://www.instagram.com/daralnawatico/",
   location: {
-    en: "Saudi Arabia, Jeddah",
-    ar: "المملكة العربية السعودية، جدة",
+    en: "1 Al Sahili Center - Baladiyah St. - Jeddah",
+    ar: "١ مركز السحيلى - شارع البلديه - جدة",
+    maps: "https://maps.app.goo.gl/UseKWf9THHLY2yGr8",
   },
   products: {
     catalog: catalogPdf,
