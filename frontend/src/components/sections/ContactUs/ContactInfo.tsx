@@ -11,12 +11,12 @@ const ContactInfo = () => {
   const contactInfoArr = [
     {
       icon: <FaPhone className="text-white" />,
-      text: t("info.phone"),
+      text: info.phone,
       href: `tel:${info.phone}`,
     },
     {
       icon: <MdEmail className="text-white" />,
-      text: t("info.email"),
+      text: info.email,
       href: `mailto:${info.email}`,
     },
     {
@@ -68,6 +68,7 @@ const ContactInfo = () => {
               ${href ? "hover:text-green-500" : ""}`}
             key={i}
             title={text}
+            dir="ltr"
             href={href}
             size="custom"
             SvgIcon={icon}
