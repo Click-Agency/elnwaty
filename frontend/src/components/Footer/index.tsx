@@ -125,6 +125,7 @@ const Footer = () => {
                       size="custom"
                       title={"name" in link ? link.name : undefined}
                       className={`
+                      text-center
                       justify-start
                       !text-gray-200
                       hover:!text-primary

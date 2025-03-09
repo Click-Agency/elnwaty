@@ -1,5 +1,5 @@
 const config = {
-  sendToEmails: ["ahmed.ehab632@gmail.com"],
+  sendToEmails: ["info@daralnawati.sa"],
 };
 
 const apiRoutes = {

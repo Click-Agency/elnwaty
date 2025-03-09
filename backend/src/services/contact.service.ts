@@ -23,17 +23,22 @@ const sendContactService = async (res: Response, data: Contact) => {
       process.env.NODEMAILER_PASS!
     );
 
-    await mailer.sendMail(data.name, data.email, config.sendToEmails, {
-      subject: process.env.NODEMAILER_SUBJECT,
-      attachments: [
-        {
-          filename: `${excel.config.filename}.${excel.config.extension}`,
-          content: buffer,
-        },
-      ],
-    });
+    await mailer.sendMail(
+      excel.config.sheetname,
+      process.env.NODEMAILER_USER!,
+      config.sendToEmails,
+      {
+        subject: process.env.NODEMAILER_SUBJECT,
+        attachments: [
+          {
+            filename: `${excel.config.filename}.${excel.config.extension}`,
+            content: buffer,
+          },
+        ],
+      }
+    );
   } catch (e) {
-    res.status(500).json({ error: "internal server error" }).end();
+    throw "Something went wrong";
   }
 };
 

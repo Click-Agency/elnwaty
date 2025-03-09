@@ -23,7 +23,7 @@ class Mailer {
     } & Partial<Transporter> = {}
   ) {
     this.transporter = createTransport({
-      host: host,
+      host,
       port,
       secure,
       auth: {

@@ -23,7 +23,7 @@ const apiRoutes = {
 };
 
 const info = {
-  email: "",
+  email: "info@daralnawati.sa",
   phone: "+966 56 537 1008",
   whatsapp: "https://wa.me/966565371008",
   facebook: "https://www.facebook.com/share/18sBvtJURJ/?mibextid=wwXIfr",
