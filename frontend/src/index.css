@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.PhoneInputInput {
+  @apply focus:!outline-none;
+}
+
+@layer base {
+  :root {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .containerPadding {
+    @apply mx-auto px-4 md:px-6;
+  }
+
+  .mask-hero-top {
+    mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8) 30%,
+      rgba(0, 0, 0, 0.1) 65%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}

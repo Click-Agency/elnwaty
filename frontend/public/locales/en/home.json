@@ -1,0 +1,97 @@
+{
+  "title": "home",
+
+  "hero": {
+    "title": "We purify water",
+    "subtitle": "Pure Water, Healthy Life",
+    "coName": "Dar Al-NAWATI Company"
+  },
+
+  "welcome": {
+    "title": "Welcome to",
+    "description": "a leader in water purification and treatment in the saudi arabia region. We offer you the latest technology and the highest quality in out products and services."
+  },
+
+  "ourServices": {
+    "title": "Our Services",
+    "description": "a leader in water purification and treatment in the saudi arabia region. We offer you the latest technology and the highest quality in out products and services.",
+
+    "items": {
+      "descriptionOne": "Design, manufacture, and maintenance of water treatment plants",
+
+      "descriptionTwo": "Supply of spare parts and chemicals for water treatment",
+
+      "descriptionThree": "Latest technologies in desalination and water purification",
+
+      "descriptionFour": "Periodic maintenance and follow-up: We guarantee the effciency of your device over the long term."
+    }
+  },
+
+  "whyChooseUs": {
+    "title": "Why Choose Us?",
+
+    "items": {
+      "descriptionOne": "Over two decades of experience in water treatment",
+
+      "descriptionTwo": "Innovative and sustainable solutions tailored to your needs",
+
+      "descriptionThree": "Specialized team offering top-notch services and technical support"
+    }
+  },
+
+  "achievements": {
+    "title": "Our Achievements",
+
+    "items": [
+      {
+        "number": "125",
+        "title": "Statfized Clients"
+      },
+      {
+        "number": "9",
+        "title": "Years of Experience"
+      },
+      {
+        "number": "150",
+        "title": "Projects Completed"
+      },
+      {
+        "number": "88",
+        "title": "Units Installed"
+      }
+    ]
+  },
+
+  "ourProjects": {
+    "title": "Our Projects"
+  },
+
+  "ourSuppliers": {
+    "title": "Our Suppliers"
+  },
+
+  "ourClients": {
+    "title": "Our Clients"
+  },
+
+  "testimonials": {
+    "title": "What Our Clients Say !",
+
+    "items": {
+      "cardOne": {
+        "name": "John Doe",
+        "feedback": "I am very happy with the service provided by Dar Al Nawati Company. They are very professional and always on time. I would recommend them to anyone who needs water treatment services."
+      },
+
+      "cardTwo": {
+        "name": "Jane Doe",
+        "feedback": "I am very happy with the service provided by Dar Al Nawati Company. They are very professional and always on time. I would recommend them to anyone who needs water treatment services."
+      },
+
+      "cardThree": {
+        "name": "John Smith",
+        "feedback": "I am very happy with the service provided by Dar Al Nawati Company. They are very professional and always on time. I would recommend them to anyone who needs water treatment services."
+      }
+    }
+  }
+}
