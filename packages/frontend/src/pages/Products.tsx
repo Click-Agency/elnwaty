@@ -167,6 +167,7 @@ export default function Products() {
           bg-cup-water-pattern
           bg-no-repeat 
           bg-center
+          bg-cover
           h-[100vh]
           justify-center`}
       >
