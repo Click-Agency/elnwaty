@@ -33,7 +33,7 @@ const AboutHero = ({
         className={trim(`
           !text-responsive-cover
           text-shadow-lg
-          bg-auto`)}
+          bg-cover`)}
       />
       {children}
     </SectionContainer>

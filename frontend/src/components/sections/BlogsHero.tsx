@@ -68,7 +68,7 @@ const BlogsHero = () => {
           min-h-[300px]
           bg-center
           bg-full-cup-pattern
-          bg-auto
+          bg-cover
           transition-opacity
           duration-500
           ease-in-out

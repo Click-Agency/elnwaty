@@ -27,7 +27,7 @@ const WhyChooseUs = () => {
 
   return (
     <SectionContainer
-      className="bg-moving-wave-pattern bg-auto bg-center"
+      className="bg-moving-wave-pattern bg-cover bg-center"
       wraperClassName="items-center gap-20 py-20 overflow-hidden"
     >
       <SectionHeader title={t("whyChooseUs.title")} />
