@@ -1,0 +1,41 @@
+{
+  "name": "elnwaty",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Dar Elnwaty App",
+  "author": "Ahmed Ehab",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ],
+  "homepage": "https://github.com/Click-Agency/elnwaty#readme",
+  "keywords": [
+    "elnwaty",
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "test:backend": "npm run test -w packages/backend",
+    "test:frontend": "npm run test -w packages/frontend",
+    "test": "concurrently --kill-others \"npm run test:backend\" \"npm run test:frontend\"",
+    "dev:backend": "npm run dev -w packages/backend",
+    "dev:frontend": "npm run dev -w packages/frontend",
+    "dev": "concurrently --kill-others \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:backend": "npm run build -w packages/backend",
+    "build:frontend": "npm run build -w packages/frontend",
+    "build": "npm run build --workspaces",
+    "start:backend": "npm run start -w packages/backend",
+    "start:frontend": "npm run preview -w packages/frontend",
+    "start": "concurrently --kill-others \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "bugs": {
+    "url": "https://github.com/Click-Agency/elnwaty/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Click-Agency/elnwaty.git"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
