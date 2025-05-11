@@ -10,7 +10,8 @@ import { ClipLoader } from "react-spinners";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
 import RadioStyled from "../../shared/RaidoStyled";
-import { createContact } from "../../../api/routes/cards";
+import { send } from "@emailjs/browser";
+//import { createContact } from "../../../api/routes/cards";
 import toast from "react-hot-toast";
 
 const Form = () => {
@@ -19,7 +20,7 @@ const Form = () => {
 
   useEffect(() => {
     const phoneInputCountry = document.querySelector(
-      ".PhoneInputCountry"
+      ".PhoneInputCountry",
     ) as HTMLElement;
 
     if (phoneInputCountry) {
@@ -38,7 +39,7 @@ const Form = () => {
   }, [i18n.language]);
 
   const contactTypeArr: ContactTypes = Object.values(
-    t("form.type.items", { returnObjects: true })
+    t("form.type.items", { returnObjects: true }),
   ).map((item: string) => ({ label: item, value: item }));
 
   const {
@@ -53,8 +54,23 @@ const Form = () => {
     try {
       setIsLoading(() => true);
 
-      const res = await createContact(data);
+      // const res = await createContact(data);
 
+      const template = {
+        from_name: data.name,
+        from_email: data.email,
+        phone: data.phone,
+        subject: data.type,
+        to_name: "Dar AlNawati",
+        message: data.message,
+      };
+
+      const res = await send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        template,
+        import.meta.env.VITE_EMAILJS_KEY,
+      );
       if (res.status !== 200) {
         setIsLoading(() => false);
       }
