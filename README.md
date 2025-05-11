@@ -18,7 +18,7 @@ VITE_API_BASE_URL="https://your_backend.uri"
 ```
 
 ```evn
-#For emailjs 
+#For emailjs
 
 const template = {
     from_name: data.name,
@@ -28,12 +28,11 @@ const template = {
     to_name: "Dar AlNawati",
     message: data.message,
 };
- 
+
 VITE_EMAILJS_SERVICE_ID = "service_id"
 VITE_EMAILJS_TEMPLATE_ID = "temp_id"
 VITE_EMAILJS_KEY = "key"
 ```
-
 
 ### Made with:
 
